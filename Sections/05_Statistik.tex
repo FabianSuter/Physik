@@ -1,0 +1,47 @@
+\section{Statistik}
+	\subsection{Arithmetisches Mittel $\overline{x}_{arith}$}
+		
+	$\overline{x}_{arith} := \frac{1}{N} \sum \limits_{i = 1}^N  x_i$
+	
+		
+		
+	\subsection{Geometrisches Mittel $\overline{x}_{geom}$}
+	\textbf{Nur für positive Zahlenreihen $x_i$ definiert!} \\
+	\\		
+	$\overline{x}_{geom} := \sqrt[N]{\prod \limits_{i = 1}^N  x_i }$ \qquad \qquad $\Rightarrow \overline{x}_{geom} \leq \overline{x}_{arith}$
+		
+		
+		
+	\subsection{Quadratisches Mittel QMW (RMS)}
+	\textbf{Wechselstromtechnik; Effektivwert} \\
+	\\
+	$QMW := \sqrt{ \frac{1}{N} \sum \limits_{i = 1}^N  x_i^2 }$
+		
+		
+	\subsection{Harmonisches Mittel $\overline{x}_{harm}$}		
+	
+	$\overline{x}_{harm} := \frac{N}{ \sum \limits_{i = 1}^N   \frac{1}{x_i} } $ \\
+	\\
+	Kann sinnvoll eingesetzt werden, wenn man für die $i-te$ Teilstrecke $s_i$ eine Zeit $t_i$ benötigt (also eine Durchschnittsgeschwindigkeit von $v_i = \frac{s_i}{t_i}$ und eine Durchschnittsgeschwindigkeit über $N$ Teilstrecken ermitteln will: \\
+	\\
+	$\overline{v}_{harm} = \frac{\sum \limits_{i = 1}^N  s_i }{\sum \limits_{i = 1}^N  t_i} = \frac{\sum \limits_{i = 1}^N  s_i }{\sum \limits_{i = 1}^N \frac{s_i}{v_i} }  $ \qquad gewichtetes harm. Mittel
+		
+		
+		
+	\subsection{Standardabweichung $\sigma$}	
+		
+	\begin{tabular}{ll}
+	Varianz: & $\sigma^2 := \frac{1}{N} \sum \limits_{i = 1}^N (x_i - \overline{x}_{arith} )^2 $ \\
+	\\
+	Standardabweichung: &  $\sigma := \sqrt{ \frac{1}{N} \sum \limits_{i = 1}^N (x_i - \overline{x}_{arith} )^2 }$ \\
+	\end{tabular}
+		
+		
+		
+	\subsection{Standardabweichung des Mittelwerts}	
+	\textbf{Gilt nur, wenn eine Normalverteilung vorliegt!} \\
+	Beschreibt nur statistische Fehler \\
+	\\
+	$\sigma(\overline{x}_{arith}) = \frac{\sigma}{\sqrt{N}} $
+		
+		

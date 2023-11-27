@@ -1,0 +1,98 @@
+\section{Mathematik-Hilfe}
+		
+	\subsection{Trigonometrie}
+	\begin{tabular}{| c | c | c |}
+	\hline
+	Sinus & Cosinus & Tangens \\ 
+	\hline 
+	\rule{0pt}{10pt} $\frac{GK}{H}$ & $\frac{AK}{H}$ & $\frac{AK}{GK}$ \\ 
+	\hline
+	\end{tabular} 
+		
+		
+		
+	\subsection{Schwerpunkt}
+	Die Koordinaten des Schwerpunkts müssen komponentenweise berechnet werden: \\
+	\\
+	$x_s = \frac{\sum  x_i \cdot m_i}{M}$ \qquad	$y_s = \frac{\sum  y_i \cdot m_i}{M}$ \qquad $z_s = \frac{\sum  z_i \cdot m_i}{M}$ \\
+	\\
+	\begin{tabular}{ll}
+	$x_s \; , y_s \; , z_s$ & Koordinaten des Schwerpunkts \\
+	$x_i \; , y_i \; , z_i$ & Koordinaten von kleinen Massepunkten \\
+	$m_i$ & Kleine Massepunkte an entsprechenden Koordinaten \\
+	$M$ & Gesamtmasse des Körpers
+	\end{tabular}
+	
+	\subsection{Polarkoordinaten (Kreisbewegung)}
+
+	
+	\begin{tabular}{ll}
+	polar $\rightarrow$ kartesisch & $\vec{P} =  \begin{pmatrix} x \\ y \end{pmatrix} =  \begin{pmatrix} r \cdot \cos(\phi)  \\ r \cdot \sin(\phi)  \end{pmatrix}$ \\
+	\\
+	kartesisch $\rightarrow$ polar & $\vec{P} =  \begin{pmatrix} r \\ \phi \end{pmatrix} =  \begin{pmatrix} \sqrt{x^2 + y^2}  \\ \tan \big( \frac{x}{y} \big)   \end{pmatrix}$\\
+	\end{tabular}
+	
+	
+	
+	\subsection{Ableitungsregeln S .445-448}
+			
+			\subsubsection{Elementare Regeln}
+			\begin{tabular}{lll}
+			Potenzen: & $f(x) = x^3$ & $f'(x) = 3 \, x^2$ \\
+			& $f(x) = x^\alpha$ & $f'(x) = \alpha \cdot x^{\alpha - 1}$ \\
+			\\
+			Linearität: & $f(x) = c \cdot x^2$ & $f'(x) = c \cdot 2 \, x $ \\
+			\\
+			Summe: & $(u(x) + v(x) - w(x))' $ & = $u'(x) + v'(x) - w'(x)$ \\
+			\\
+			Konstanten: & $c = const$ $\rightarrow$ $c' = 0$ \\
+			\end{tabular}
+			
+			
+			\subsubsection{Produktregel}
+			$(f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$ 
+			
+			\subsubsection{Quotientenregel}
+			$\left( \frac{u(x)}{v(x)} \right) ' = \frac{u'(x) \cdot v(x) - u(x) \cdot v'(x)}{v(x) ^2}$ \quad $\rightarrow$ als Produkt schreiben \\
+			\\
+			$u(x) \cdot \left( \frac{1)}{v(x)} \right) ' =  u'(x) \cdot \frac{1}{v(x)} + u(x) \cdot \frac{- v'(x)}{v(x)^2}$
+			
+			\subsubsection{Kettenregel}
+			$g(f(x))' =  f'(x) \cdot g'(x)$ \\
+			
+			\subsubsection{Umkehrfunktion}
+			$(f^{-1}(y_0))' = \frac{1}{f'(x_0)} =  \frac{1}{f'(f^{-1}(y_0))}$ \\
+			
+
+			
+			\subsection{Allgemeine Logarithmus-Ableitung}
+			$(\log_b(x))' = \left( \frac{\ln(x)}{\ln(b)} \right)' = \frac{1}{\ln(b)} \cdot (\ln(x))' = \frac{1}{\ln(b)} \cdot \frac{1}{x} $
+			
+			
+			
+			
+			\subsection{Integrationsregeln S. 494-496}
+		Linearität: $\int \limits_{a}^{b} \alpha \, f(x) \, dx = \alpha \int \limits_{a}^{b} f(x) \, dx$ 
+		
+		
+		\subsubsection{Rechenregeln mit Integralen S. 508-510}
+		\begin{tabular}{ll}
+		Zerlegung: & $\int \limits_{a}^{b} f_1(x) \, dx + f_2(x) \, dx = \int \limits_{a}^{b} f_1(x) \, dx + \int \limits_{a}^{b} f_2(x) \, dx$ \\
+		\\		
+		& $\int \limits_{a}^{c} f(x) \, dx = \int \limits_{a}^{b} f(x) \, dx + \int \limits_{b}^{c} f(x) \, dx$ \\
+		\\
+		Grenzen tauschen: & $ \int \limits_{a}^{b} f(x) \, dx = -  \int \limits_{b}^{a} f(x) \, dx $ \\
+		\\
+		Gleiche Grenzen: &  $\int \limits_{a}^{a} f(x) \, dx = 0$ \\
+		\end{tabular}
+		
+		
+		\subsection{Wichtige Integrale S. 495}
+		\begin{tabular}{ll}
+		$\int \limits_{a}^{b} x^2  \, dx = \frac{b^3}{3} - \frac{a^3}{3}$ & $\int \limits_{a}^{b} x \, dx = \frac{b^2}{2} - \frac{a^2}{2}$ \\
+		\\
+		$\int \limits_{a}^{b} 1 \, dx = b - a $ (Rechteck)& \\
+		\end{tabular}
+			
+	
+	
