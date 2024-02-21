@@ -1,6 +1,7 @@
 \documentclass[8pt, a4paper, fleqn, landscape]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
+\usepackage{ulem}
 
 \usepackage{hyperref}
 
@@ -65,6 +66,10 @@
 				
 \providecommand{\diff}{\mathop{} \! \mathrm{d}}
 
+%new commands 
+\newcommand{\const}{\mathrm{const}} 
+\newcommand{\e}{\mathrm{e}}
+
 
 %Informationen für den Befehl maketitle
 \title{Physik}
@@ -91,6 +96,14 @@
 		\input{Sections/05_Statistik.tex}
 
 		\input{Sections/06_Mathematik-Hilfe.tex}
+
+		\pagebreak %Als Trennung von Physik1 zu Physik2, kann später entfernt werden
+
+		\input{Sections/11_Fluiddynamik.tex}
+
+		\input{Sections/12_Thermodynamik.tex}
+
+		\input{Sections/13_Anhang.tex}
 		
 	\end{multicols*}	
 \end{document}
