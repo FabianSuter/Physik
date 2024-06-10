@@ -76,6 +76,7 @@ $$\boxed{ p = \frac{F_{\perp}}{A} } \qquad \boxed{ \tau = \frac{F_{\parallel}}{A
 	$1 \, \mathrm{at} = 1 \, \mathrm{kp \cdot cm^{-2}} = 9.81 \cdot 10^4 \, \mathrm{Pa}$  \\
 	$1 \, \mathrm{at"u} = 1 \, \mathrm{at}$ ("Uberdruck; Vergleich zu normalem Luftdruck) \\
 	$1 \, \mathrm{Torr} = \frac{1}{760} \mathrm{at}$ (1mm-Hg-Säule) \\
+	$1 \, \mathrm{psi} = 6894.76 \, \mathrm{Pa}$ (Britisch) \\
 
 
 	
@@ -142,7 +143,7 @@ $$ \boxed{ p_1 \cdot V_1 = p_2 \cdot V_2 = \, \const } \qquad  \Rightarrow  \box
 	
 	
 \subsection{Hydrostatischer Druck (Schweredruck)}
-\textbf{Gilt nur für Flüssigkeiten!} 
+\textbf{Fluid inkompressibel!} 
 
 $$ \boxed{ p = \rho \cdot g \cdot h }$$	
 
@@ -160,6 +161,7 @@ $$ \boxed{ p = \rho \cdot g \cdot h }$$
 	
 
 \subsection{Barometrische Höhenformel (Gase)}
+\textbf{Fluid kompressibel!} 
 
 $$ \boxed{ p(h) = p_0 \cdot e^ {- \frac{\rho_0}{p_0} \cdot g \cdot h} }$$	
 
@@ -208,19 +210,34 @@ $$ \boxed{ \sigma := \frac{F}{l} } $$
 
 
 	\begin{tabular}{c l c}
-		\rule{0pt}{10pt}$\sigma$ & Oberflächenspannung & $[\sigma] = \mathrm{\frac{N}{m}}$ \\
+		\rule{0pt}{10pt}$\sigma$ & Oberflächenspannung & $[\sigma] = \mathrm{\frac{N}{m}} = \mathrm{\frac{J}{m^2}}$ \\
 		$F$ & Kraft & $[F] = \mathrm{N} $ \\
 		$l$ & Länge & $[l] = \mathrm{m}$  \\
 		\\
 	\end{tabular}
 	
 	\textbf{Die Länge $l$ entspricht der gesamten Berührungslänge  \\
-	zwischen Flüssigkeit und Festkorper / Gas} \\
+	zwischen Flüssigkeit und Festkörper / Gas} \\
 	
 	\begin{tabular}{ll}
 	Zylinder & $l = 2 \, \pi \, r$ \\
 	Lamellen & $l = 2 \, b$  (beidseitig!) \\
 	\end{tabular}
+
+
+\subsection{Grenzflächenspannung}
+
+$$ \boxed{ \sigma_{sl} + \sigma_{lg} \cdot cos \varphi = \sigma_{sg }} $$
+
+\begin{minipage}{0.48\linewidth}
+	\includegraphics[width=\linewidth]{Bilder/benetzung.png} \\
+	$ \varphi < 90 $ %TODO: Winkel einfügen
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+	\includegraphics[width=\linewidth]{Bilder/nichtbenetzung.png} \\
+	$ \varphi > 90° $
+\end{minipage}
 
 
 
@@ -283,7 +300,7 @@ $$ \boxed{ p = \frac{2 \cdot \sigma}{r} } $$
 $\bullet$ & Stromlinien zeigen Geschwindigkeit des Fluids \\
 $\bullet$ & \textbf{Dichte} Stromlinien bedeutet \textbf{hohe} Geschwindigkeit \\
 $\bullet$ & \textbf{Dünne} Stromlinien bedeutet \textbf{niedrige} Geschwindigkeit \\
-$\bullet$ & Stationär: Stromlinien schneiden sich nicht 
+$\bullet$ & Stationär: Stromlinien = Bahnlinien $\Rightarrow$ schneiden sich nicht 
 \end{tabular}
 
 
@@ -349,7 +366,6 @@ $$  \boxed{ p + \rho \, \cdot g \cdot h =  \const} $$
 
 \subsubsection{Hydrodynamisches Paradoxon}
 \textbf{Je grösser die Strömungsgeschwindigkeit, desto kleiner der Druck} \\
-$\Rightarrow$ Gegen jede Intuition
 
 
 %\vfill\null
@@ -361,7 +377,7 @@ $\Rightarrow$ Gegen jede Intuition
 Die in der Bernoulli-Gleichung vorkommenden Terme können als \underline{Energie pro Volumen} betrachtet werden \\
 \\
 \begin{tabular}{l c l}
-$  \mathrm{E_{Mech}}$ & $=$ & $\mathrm{Elastische \; Energie +  pot. \; Energie + kin. \; Energie}$ \\
+$  \mathrm{E_{Mech}}$ & $=$ & $\mathrm{elast. \; Energie +  pot. \; Energie + kin. \; Energie}$ \\
 \\
 & $=$ & $ p \cdot V + m \cdot g \cdot h + \frac{1}{2} \, m \cdot v^2 = \const$ \\
 \\
@@ -412,11 +428,11 @@ $$ \boxed{ \tau = \eta \cdot \frac{v}{d} }  \qquad  \boxed{ \tau = \eta \cdot \f
 		\\
 \end{tabular}
 	
-\textbf{Beispiele: Werte für $\eta$} \\
+\textbf{Beispiele: Werte für $\eta$} \\ %TODO: Gradzeichen fixen!
 \\
 \begin{tabular}{l c l}
-		$\eta_{Luft}$ & $:=$ & $2 \cdot 10^{-5} \; \mathrm{Pa \cdot s} $ \\
-		$\eta_{Wasser}$ & $:=$ & $10^{-2} \; \mathrm{Pa \cdot s}$ \\
+		$\eta_{Luft}$ & $:=$ & $17 \cdot 10^{-6} \; \mathrm{Pa \cdot s} $ \\
+		$\eta_{Wasser} (20°C)$ & $:=$ & $10^{-2} \; \mathrm{Pa \cdot s}$ \\
 		$\eta_{Oel}$ & $:=$ & $0.1 \; \mathrm{Pa \cdot s}$ bis $1 \; \mathrm{Pa \cdot s}$ \\
 \end{tabular}
 
@@ -426,7 +442,7 @@ $$ \boxed{ \tau = \eta \cdot \frac{v}{d} }  \qquad  \boxed{ \tau = \eta \cdot \f
 $$ \boxed{ \nu = \frac{\eta}{\rho}  } $$
 
 \begin{tabular}{c l c}
-		\rule{0pt}{8pt}$\nu$ & kinemtaische Zähigkeit & $[\nu] = \mathrm{\frac{m^2}{s}}$ \\
+		\rule{0pt}{8pt}$\nu$ & kinematische Zähigkeit & $[\nu] = \mathrm{\frac{m^2}{s}}$ \\
 		\rule{0pt}{8pt}$\rho$ & Dichte & $[\rho] = \mathrm{\frac{kg}{m^3}}$  \\	
 \end{tabular}
 	
@@ -483,6 +499,8 @@ $$ \boxed{ \dot{V} = \frac{\pi \cdot \Delta \, p \cdot R^4}{8 \cdot \eta \cdot l
  
 \subsubsection{Geschwindigkeitsverteilung von $r=0$ bis R}
 
+\includegraphics[width=0.8\linewidth]{Bilder/laminare_geschwindigkeit.png}
+
 $$ \boxed{ v(r) = \frac{1}{4 \cdot \eta} \cdot \frac{\Delta \, p}{l} \, (R^2 - r^2) } $$
 
 
@@ -529,12 +547,12 @@ Reynolds-Zahl dient auch richtigem Vergleich von Modellversuchen. \\
 $\Rightarrow$ Gleiche Reynolds-Zahl bedeutet gleiches Verhalten \\
 \\
 $\Rightarrow$ Gleiche Reynolds-Zahl bedeutet auch gleiche \\
- Relative Grenzschicht-Dicke $D$ (siehe Abschnitt 3.5)
+ Relative Grenzschicht-Dicke $D$ (siehe \ref{Grenzschichtdicke})
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Turbulente / Laminare Rohrströmung}
@@ -578,7 +596,7 @@ Vorgehen, wenn man nicht weiss, ob sich Wirbel bilden oder nicht \\
 
 
 
-\subsection{Prandl'sche Grenzschicht-Dicke $D$}
+\subsection{Prandl'sche Grenzschicht-Dicke $D$}\label{Grenzschichtdicke}
 Prandl'sche Grenzschicht-Dicke $D$ beschreibt, in welcher \textbf{Distanz} die \textbf{Geschwindigkeit} eines laminar bewegten Teils (z.B. ein \\
 Flugzeugflügel) \textbf{Null} ist. 
 
@@ -599,12 +617,12 @@ $$\boxed{ D = \sqrt{\frac{\eta}{\rho} \cdot \frac{l}{v}} }$$
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-Die Geschwindigkeit innerhalb der Grendschicht $D$ nimmt von Teil bis hin zum äussersten Rand \textbf{linear} ab.
+Die Geschwindigkeit innerhalb der Grenzschicht $D$ nimmt vom Teil bis hin zum äussersten Rand \textbf{linear} ab.
 \end{minipage}
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -614,9 +632,9 @@ Die Geschwindigkeit innerhalb der Grendschicht $D$ nimmt von Teil bis hin zum ä
 $$ \boxed{  p_1 +  \rho \cdot g \cdot h_1 + \frac{1}{2} \, \textcolor{red}{\alpha_1} \cdot \rho \cdot v_1^2 = p_2 +  \rho \cdot g \cdot h_2 + \frac{1}{2} \, \textcolor{red}{\alpha_2} \cdot \rho \cdot v_2^2 \textcolor{red}{+ \Delta \, p_v}  }$$
 
 \begin{tabular}{c| c |c}
- & laminar & turbulent \\ 
+ & turbulent & laminar \\ 
 \hline 
-Korrekturfaktoren & $\alpha_1 = \alpha_2 = 2$  & $\alpha_1 \approx \alpha_2 \approx 1$ \\ 
+Korrekturfaktoren & $\alpha_1 \approx \alpha_2 \approx 2$  & $\alpha_1 \approx \alpha_2 \approx 1$ \\ 
 \hline 
 \rule{0pt}{11pt} Druckverlust $\Delta \, p_v$ & \multicolumn{2}{c}{$\Delta p_v = \lambda_x \frac{l}{d} \cdot \frac{\rho}{2} \cdot v^2$} \\ 
 \hline 
@@ -626,7 +644,9 @@ Korrekturfaktoren & $\alpha_1 = \alpha_2 = 2$  & $\alpha_1 \approx \alpha_2 \app
 
 
 \subsection{Druckwiderstand $F_D$}
-Bezeichnet die turbulente Luftreibungskraft $F_R$ und wird meist als Luftwiderstand bezeichnet 
+Bezeichnet die turbulente Luftreibungskraft $F_R$ und wird meist als Luftwiderstand bezeichnet \\
+
+\includegraphics[width=0.8\linewidth]{Bilder/widerstandsbeiwert.png}
 
 $$ \boxed{ F_D = \Delta \, p \cdot A_s = \frac{1}{2} \, \cdot \rho \cdot v^2 \cdot A_s \cdot c_W } $$
 
@@ -680,8 +700,8 @@ $$ \boxed{ \Gamma = 	\oint \vec{v} \bullet d\vec{s} } $$
 \end{tabular}
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
