@@ -1,5 +1,24 @@
 \section{Thermodynamik}
 
+\subsection{Terminologie}
+
+\begin{center}
+    \begin{tabular}{l||l|lll}
+        \textbf{System ist $\downarrow$} & \textbf{Materie-} & & \multicolumn{2}{l}{\textbf{Energietausch}}  \\
+			& \textbf{tausch} &	& Arbeit & Wärme \\ \hline
+		offen & erlaubt & - & erlaubt  & erlaubt \\
+		      &         & adiabatisch  & erlaubt & Nein\\
+			  &         & arbeitsdicht & Nein    & erlaubt\\
+			  &         & beides       & Nein    & Nein\\ \hline
+		geschlossen & Nein & - & möglich  & möglich \\
+		      &         & adiabatisch  & möglich & Nein\\
+			  &         & arbeitsdicht & Nein    & möglich\\
+			  &         & energiedicht & Nein    & Nein\\
+	\end{tabular}
+\end{center}
+
+\includegraphics[width=\linewidth]{Bilder/thermodynamisches_system.png}
+
 \subsection{Absolute Temperatur $T$}
 $$ \boxed{ T = \theta + 273.15 \, K = \theta - \theta_0 }$$
 
@@ -49,17 +68,30 @@ $$ \boxed{ V' = V + \Delta \,  V = V + \underbrace{  \gamma }_{\substack{\approx
 
 
 \begin{tabular}{c l c}
-		$V'$ & Volumen nach Ausdehnung & $[A'] = \mathrm{m^3}$ \\
-		$V$ & Anfangsvolumen & $[A] = \mathrm{m^3}$ \\
+		$V'$ & Volumen nach Ausdehnung & $[V'] = \mathrm{m^3}$ \\
+		$V$ & Anfangsvolumen & $[V] = \mathrm{m^3}$ \\
 		$\Delta \, V$ & Volumenänderung & $[\Delta \, V] = \mathrm{m^3}$ \\
-		\rule{0pt}{8pt}$\gamma$ & Volumenausdehnungskoeffizient & $[\beta] = \mathrm{\frac{1}{K}}$ \\ 
+		\rule{0pt}{8pt}$\gamma$ & Volumenausdehnungskoeffizient & $[\gamma] = \mathrm{\frac{1}{K}}$ \\ 
 		$\Delta \, T $ & Temperaturänderung & $[\Delta \, T ] = \mathrm{K}$ \\
 \end{tabular}
 
+% \vfill\null
+% \columnbreak
 
-
-\vfill\null
-\columnbreak
+\begin{center}
+    \begin{tabular}{lc}
+        \textbf{Material} & \textbf{Koeffizient ($10^{-6} K^{-1} $)}\\ \hline
+		Aluminium       & 23 \\
+		Eisen           & 12 \\
+		Stahl, unlegiert& 11 ... 13 \\
+		Diamant         & 1.3 \\
+		Silizium        & 2 \\
+		Gummi           & 220 \\
+		Beton           & 12 \\
+		Polysterol      & 70 \\
+		Zerodur         & 0 $\pm$ 0.007 \\
+	\end{tabular}
+\end{center}
 
 
 
@@ -124,15 +156,13 @@ $$ \boxed{ \frac{p \cdot V}{T} = \, \const } \qquad  \Rightarrow \boxed{ \frac{p
 	$T_x$ & \textbf{Absolut-}Temperatur (in K) & $[T] = \mathrm{K}$ \\
 \end{tabular}
 	
+% \vfill\null
+% \columnbreak
 
-\vfill\null
-\columnbreak
-
-	
 	
 \subsubsection{Boyle-Mariotte}	
 \textbf{Das Gesetz gilt nur bei konstanter Temperatur!} \\
-$\Rightarrow$ \textbf{isotherme} Zustandsänderung
+$\Rightarrow$ \textbf{Isotherme} Zustandsänderung
 
 $$  \boxed{ p \cdot V = \, \const } \qquad  \Rightarrow  \boxed{ p_1 \cdot V_1 = p_2 \cdot V_2 } $$ 
 
@@ -143,7 +173,7 @@ $$  \boxed{ p \cdot V = \, \const } \qquad  \Rightarrow  \boxed{ p_1 \cdot V_1 =
 \subsubsection{Gay-Lussac}
 
 \textbf{ Das Gesetz gilt nur bei konstantem Druck!} \\
-$\Rightarrow$ \textbf{isobare} Zustandsänderung
+$\Rightarrow$ \textbf{Isobare} Zustandsänderung
 
 $$  \boxed{ \frac{V}{T} = \; \const } \qquad  \Rightarrow  \boxed{ \frac{V_1}{T_1} = \frac{V_2}{T_2} } $$
 
@@ -153,14 +183,11 @@ $$  \boxed{ \frac{V}{T} = \; \const } \qquad  \Rightarrow  \boxed{ \frac{V_1}{T_
 \subsubsection{Gay-Lussac und Amontons}
 
 \textbf{Das Gesetz gilt nur bei konstantem Volumen!} \\
-$\Rightarrow$ \textbf{isochore} Zustandsänderung
+$\Rightarrow$ \textbf{Isochore} Zustandsänderung
 
 $$ \boxed{ \frac{p}{T} = \; \const } \qquad  \Rightarrow \boxed{ \frac{p_1}{T_1} = \frac{p_2}{T_2} }$$
 
 
-
-
-	
 	
 \subsection{Universelle Gasgleichung für ideale Gase}
 
@@ -199,10 +226,8 @@ $$\boxed{ n = \frac{N}{N_A} = \frac{m}{M} = \frac{N \cdot k}{R} } $$
 	\rule{0pt}{8pt}$M$ & Mol-Masse & $[M] = \mathrm{\frac{kg}{mol}}$ \\
 \end{tabular}
 
-
-
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Mechanische Arbeit $\Delta W$ von Gasen}
@@ -270,8 +295,8 @@ $$ \boxed{ V_m = \frac{V}{n} }$$
 	\rule{0pt}{8pt}$V_m$ & Mol-Volumen & $[V_m] = \mathrm{\frac{m^3}{mol}}$ \\
 \end{tabular}
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -325,12 +350,8 @@ $ \mathrm{Osmotischer \; Druck:} \; p = \frac{n}{V} \cdot R \cdot T  \qquad \mat
 Der Partialdruck $p_i$ ist der Druck, welcher die i-te Gaskomponete erzeugen würde, wenn ihr das gesamte Volumen zur Verfügung stehen würde. \\
 \end{minipage}
 
-
-
-\vfill\null
-\columnbreak
-
-
+% \vfill\null
+% \columnbreak
 
 \subsection{Gesetz von Dalton}
 In einem Gas ist die Summe der Partialdrücke $p_i$ gleich dem \\
@@ -401,15 +422,11 @@ $$ \boxed{ M = \sum_{i=1}^n  q_i \cdot M_i } $$
 	\rule{0pt}{8pt}$M_i$ & Mol-Masse der i-ten Gas-Komponete & $[M_i] = \mathrm{\frac{kg}{mol}}$ \\
 \end{tabular}
 
-
-\vfill\null
-\columnbreak
-
-
-
+% \vfill\null
+% \columnbreak
 
 \section{Reales Gas}
-Im vergleich zum idealen Gas müssen zwei Dinge berücksichtigt \\
+Im Vergleich zum idealen Gas müssen zwei Dinge berücksichtigt \\
 werden: \\
 
 
@@ -442,13 +459,8 @@ $$ \boxed{ p' = p + \frac{a}{V_m^2} }  \qquad \qquad  \boxed{ V'_m = V_m - b }$$
 	\rule{0pt}{10pt}$V_m$ & Mol-Volumen & $[V_m] = \mathrm{\frac{m^3}{mol}}$ \\
 \end{tabular}
 
-
-
-
-\vfill\null
-\columnbreak
-
-
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Van der Waals-Gleichung (n Mol)}
@@ -474,7 +486,7 @@ $$ \boxed{ \Big(  p + \frac{n^2 \cdot a}{V^2} \Big)  \cdot (V - n \cdot b) = n \
 
 \subsubsection{Van der Waals-Parameter}
 
-$$ \boxed{ a = \frac{9}{8} \cdot R \cdot T_k \cdot V_{mk} }  \qquad \qquad  \boxed{ b = \frac{V_{mk}}{3} }$$
+$$ \boxed{ a = \frac{9}{8} \cdot R \cdot T_k \cdot V_{mk} = \frac{27 R^2 T_k^2}{64 \cdot p_k}}  \qquad \qquad  \boxed{ b = \frac{V_{mk}}{3} = \frac{R T_k}{8 \cdot p_k}}$$
 
 
 $$ \boxed{ V_{mk} = 3 \cdot b } \quad \quad  \boxed{ T_k = \frac{8 \cdot a}{27 \cdot R \cdot b} } \quad \quad  \boxed{ p_k = \frac{a}{27 \cdot b^2} } $$
