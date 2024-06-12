@@ -33,11 +33,11 @@
 
 	\subsection{Reibungskräfte}
 
-		$$ \boxed{ \text{Haftreibung:} \quad  \vec{F}_{R,max} = \mu_H \cdot \vec{F}_N } $$ 
+		$$ \boxed{ \text{Haftreibung:} \quad  \vec{F}_{R,max} = \mu_H \cdot \vec{F}_N \quad \Rightarrow \text{treibende Kraft} } $$
 		
 		$$ \boxed{ \text{Gleitreibung:} \quad \vec{F}_{Gleit} \approx \mu_G \cdot \vec{F}_N } $$ 
 		
-		$$ \boxed{ \text{Rollreibung:} \quad \vec{F}_{Roll} \approx \mu_R \cdot \vec{F}_N } $$ \\
+		$$ \boxed{ \text{Rollreibung:} \quad \vec{F}_{Roll} \approx \mu_R \cdot \vec{F}_N \quad \Rightarrow \text{bremsende Kraft} } $$
 		
 		\begin{tabular}{c l c}
 			$\vec{F}_R$ & Reibungskraft & $[\vec{F}_R] = \mathrm{N}$ \\
@@ -121,13 +121,13 @@
 				\\  
 				Federkraft als Funktion der Auslenkung x \qquad $F = -k \cdot x$ \\
 				\\
-				$$ \boxed{ W_{pot} = \int \limits_0^{x_0}  - \vec{F} \bullet d \vec{x} = \int \limits_0^{x_0}  k \cdot x \, dx = \frac{1}{2} \, k \cdot x_0^2} $$ \\
+				$$ \boxed{ W_{pot} = \int \limits_0^{x_0}  - \vec{F} \bullet d \vec{x} = \int \limits_0^{x_0}  k \cdot x \, dx = \frac{1}{2} \, k \cdot \Delta x^2} $$ \\
 				
 			\begin{tabular}{c l c}
 				$W_{pot}$ & Potentielle Energie & $[W] = \mathrm{N \cdot m = J}$ \\
 				$F$ & Federkraft & $[F] = \mathrm{N} $ \\
 				$k$ & Federkonstante & $[k] = \mathrm{\frac{N}{m}}$ \\
-				$x_0$ & Auslenkung der Feder & $[x_0] = \mathrm{m}$ \\
+				$\Delta x$ & Auslenkung der Feder & $[\Delta x] = \mathrm{m}$ \\
 			\end{tabular}
 
 		\subsubsection{Kinetische Energie $W_{kin}$}
@@ -580,7 +580,7 @@
 			
 			$$ \boxed{ M = \int dM = \int r^2 \, \alpha \cdot dm = \alpha  \underbrace{  \int r^2 \cdot dm }_{\substack{J_{Scheibe} = m \cdot r^2}} }$$ \
 			
-			$$ \boxed{ \Rightarrow \; M = J \cdot \alpha} $$ \\
+			$$ \boxed{ \Rightarrow \; M = J \cdot \alpha = r \cdot F} $$ \\
 				
 			\begin{tabular}{c l c}
 				$dM_t$ & kleine Tan.-Komponente des Drehmoments & $[dM_t] = \mathrm{Nm}$ \\
@@ -593,9 +593,11 @@
 				$J$ & (Massen-) Trägheitsmoment & $[J] = \mathrm{kg \, m^2}$ \\
 			\end{tabular}
 
-		\subsubsection{Massenträgheitsmomente}
+		\subsubsection{Massenträgheitsmomente} %TODO: Irgendwann mal Bilder gegen ganze Tabelle tauschen
 		
 			\includegraphics[width=0.8\linewidth]{Bilder/massentraegheitsmomente}
+
+			Ring: $m \cdot r^2$
 
 	\subsection{Trägheitsellipsoid}
 		Trägheitsradius $r_0$: als ob ganze Masse eines Körpers nur einen \\
@@ -689,6 +691,10 @@
 			$dm$ & kleines Masse-Stück & $[dm] = \mathrm{kg}$ \\
 			$\vec{p}$ & Impuls & $[\vec{p}] = \mathrm{\frac{kg \, m}{s}}$ \\
 		\end{tabular}
+
+		\subsubsection{Energie beim Runterrollen}
+
+			$$ \boxed{E_{pot} = E_{kin} + E_{rot} , \quad \quad m \cdot g \cdot h = \frac{1}{2}m \cdot v^2 + \frac{1}{2}J \cdot \omega^2} $$
 
 		\subsubsection{Drehmoment $\vec{M}$ vs. Drehimpuls $\vec{L}$}
 			$$ \boxed{ \vec{M} = \vec{r} \times \vec{F} = \frac{d}{dt} (\vec{r} \times \vec{p}) =  \frac{d}{dt} \vec{L} = \dot{\vec{L}} }$$ \\
