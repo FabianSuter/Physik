@@ -100,9 +100,9 @@ $$ \rho_1 \cdot g \cdot h_1 = \rho_2 \cdot g \cdot h_2  $$
 
 \subsection{Wasser mit Dampf erhitzen}
 
-Ein Tasse mit $m_W = 200 \, \mathrm{g}$ Wasser  mit einer Temperatur von $T_K = 20 \, \text{°C}$ wird an
+Ein Tasse mit einer Masse $m_W$ Wasser und einer Temperatur von $T_K$ wird an
 der Wasserdampfdüse einer Kaffeemaschine mittels Wasserdampf erhitzt. Der aus der
-Kaffeemaschine ausströmende Wasserdampf ist $T_H = 96 \, \text{°C}$ heiss. Am Schluss haben sie 10 \%
+Kaffeemaschine ausströmende Wasserdampf ist $T_H$ heiss. Am Schluss haben sie 10 \%
 mehr Wasser in der Tasse. (entspricht $m_D$)\\
 Wie warm ist das Wasser nun? \\
 \\
@@ -114,8 +114,40 @@ $$ m_W \cdot c_W \, (T_M - T_K) = q_s \cdot m_D + m_D \cdot c_W \, (T_H - T_M) $
 
 \subsection{Eis in Wasser schmelzen}
 
-In einem Gefäss beifinden sich $m_W = 1 \, \mathrm{kg}$ Wasser. Dazu wird ein Eiswürfel von $m_E = 20 \, \mathrm{g}$ gegeben. Das Eis hat eine Temperatur von $T_E = -5 \, \text{°C}$ und das Wasser hat eine Temperatur $T_W$. Die Temperatur $T_0$ steht für $0 \, \text{°C}$ bzw. 275.15 K \\
+In einem Gefäss beifinden sich eine Masse $m_W$ Wasser. Dazu wird ein Eiswürfel mit Masse $m_E$ gegeben. Das Eis hat eine Temperatur $T_E$ und das Wasser hat eine Temperatur $T_W$. Die Temperatur $T_0$ steht für $0 \, \text{°C}$ bzw. 275.15 K \\
 Gesucht ist die Mischtemperatur $T_M$ 
 
 $$ \Delta Q_{ab} = \Delta Q_{zu}$$
 $$ m_W \cdot c_W \cdot (T_W - T_M) = m_E \cdot c_E \cdot (T_E - T_0) + q_f \cdot m_E + c_W \cdot (T_M - T_0) $$
+
+\subsection{Beschlagenes Fenster}
+
+Gesucht: Aussentemperatur $T_a$\\
+Gegeben: Innentemperatur $T_i$, Luftfeuchtigkeit $f_i$ in $\%$, 
+Wärmedurchgangszahl des Fensters $k$ und Wärmeübergangszahl $\alpha_i$\\
+
+Beschlag bei $p_s(T_{fi}) = f \cdot p_s(T_i) \Rightarrow T_{fi} $ mittels Magnusformel bestimmen\\
+
+Wärmestromdichte in allen Schichten gleich: $k(T_a - T_i) = \alpha_i(T_{fi} - T_i)$
+
+\subsection{Luftbefeuchter}
+Gesucht: rel. Luftfeuchtigkeit $f_{ri}$ \\
+Gegeben: Volumen des Zimmers $V$, Menge verdampftes Wasser $m$, Zeit für kompletten Austausch $t$, Innentemperatur $T_i$, Aussentemperatur $T_a$, Luftfeuchtigkeit $f_{ra}$\\
+$\dot{m}$ = Massenfluss (ai=nach innen, b=Befeuchter, ia=nach draussen)\\
+$\dot{V} = \frac{V}{t} \quad [\frac{m^3}{s}] , \quad \quad \dot{m}_b = \frac{m}{t_0} \quad [\frac{kg}{s}], \quad \quad  M = \text{0.018} \frac{kg}{mol}$\\ 
+$\rho_s = [\frac{kg}{m^3}]$ (Sättigungsdichte)
+
+\begin{center}
+    \begin{tabular}{c} 
+    \\
+    $ \dot{m}_{ai} + \dot{m}_b = \dot{m}_{ia} $ \\
+    \\
+    $ \dot{m} = f_r \cdot \rho_s \cdot \dot{V} $ \\
+    \\
+    $ f_{ra} \cdot \rho_{sa} \cdot \dot{V} + \dot{m}_b = f_{ri} \cdot \rho_{si} \cdot \dot{V} $ \\
+    \\
+    $ \rho_s = p_s (\theta) \cdot \frac{M}{R \cdot T_i} $ (Magnusformel für $p_s(T_a \text{resp.} T_i)$) \\
+    \end{tabular}
+\end{center}
+
+
