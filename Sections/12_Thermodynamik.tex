@@ -517,12 +517,8 @@ $\Delta U$ & $=$ & $\Delta W + \Delta Q$ \\
 &  $\overrightarrow{2. HS  \; \xout{100\% }}$ & \\
 \end{tabular}
 
-
-\vfill\null
-\columnbreak
-
-
-
+% \vfill\null
+% \columnbreak
 
 \subsection{Erster Hauptsatz der Wärmelehre}
 Nicht nur durch Wärmezufuhr, sondern auch durch mechanische \\
@@ -586,18 +582,13 @@ $$ U \cdot I \cdot t = c \cdot m \cdot \Delta T \quad \Leftrightarrow \quad c = 
 \end{tabular}
 
 
-
-
-
-\vfill\null
-\columnbreak
-
-
+% \vfill\null
+% \columnbreak
 
 \subsection{Wärmekapazität}
 Die Wärmekapazität drückt das Energiespeicher-Vermögen aus.
 
-$$ \boxed{ Q = c \cdot m \cdot \Delta T = n \cdot C_m \cdot \Delta T = C \cdot \Delta T  }$$
+$$ \boxed{ Q = c \cdot m \cdot \Delta T = n \cdot c_M \cdot \Delta T = C \cdot \Delta T  }$$
 
 
 \subsubsection{Absolute Wärmekapazität $C$}
@@ -609,34 +600,43 @@ $$ \boxed{ \Delta Q = C \cdot \Delta T } $$
 \subsubsection{Spezifische Wärmekapazität $c$}
 Energiespeicher-Vermögen einer \textbf{Substanz}
 
-$$ \boxed{ \Delta Q = c \cdot m \cdot \Delta T  } \qquad \qquad c_{Wasser} = 4187 \frac{J}{kg \cdot K}  $$
+\begin{minipage}{0.4\linewidth}
+	$$ \boxed{ \Delta Q = c \cdot m \cdot \Delta T  } $$	
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+	\begin{center}
+		\begin{tabular}{lc}
+			\textbf{Substanz} & \textbf{c bei 20°C}\\ \hline
+			Wasser      & 4182 \\
+			Ethanol     & 2430 \\
+			Glyzerin    & 2390 \\
+			Quecksilber & 139 \\
+			Gold        & 129 \\
+			Stahl       & 480 \\
+		\end{tabular}
+	\end{center}
+\end{minipage}
 
-
-\subsubsection{Molare Wärmekapazität $C_m$}
+\subsubsection{Molare Wärmekapazität $c_M$}
 Energiespeicher-Vermögen einer \textbf{Anzahl Moleküle}
 
-$$ \boxed{ C_m = \frac{c}{n} = M \cdot c } $$
+$$ \boxed{ c_M = \frac{c}{n} = M \cdot c } $$
 
 
 \begin{tabular}{c l c}
 	$\Delta Q$ & Zu-/Abgeführte Wärme & $[\Delta Q] = \mathrm{J}$ \\
 	\rule{0pt}{8pt}$c$ & spezifische Wärmekapazität & $[c] = \mathrm{\frac{J}{kg \cdot K}}$ \\
+	\rule{0pt}{8pt}$c_M$ & molare Wärmekapazität & $[c_M] = \mathrm{\frac{J}{mol \cdot K}}$ \\
 	\rule{0pt}{8pt}$C$ & absolute Wärmekapazität & $[C] = \mathrm{\frac{J}{K}}$ \\
-	\rule{0pt}{8pt}$C_m$ & molare Wärmekapazität & $[C_m] = \mathrm{\frac{J}{mol \cdot K}}$ \\
 	$m$ & Masse & $[m] = \mathrm{kg}$ \\
 	$\Delta T$ & Temperaturänderung & $[\Delta T] = \mathrm{K}$ \\
 	$n$ & Mol-Zahl & $[n] = \mathrm{mol}$ \\
 	\rule{0pt}{8pt}$M$ & Mol-Masse & $[M] = \mathrm{\frac{kg}{mol}}$ \\
 \end{tabular}
 
-
-
-
-\vfill\null
-\columnbreak
-
-
-
+% \vfill\null
+% \columnbreak
 
 \subsubsection{Molare Wärmekapazität von Gasen}
 
@@ -655,7 +655,7 @@ $$ \boxed{ C_{mp} - C_{mV} = R }$$
 \subsubsection{Molare Wärmekapazität von Festkörpern}
 
 
-$$ T > \Theta_D: \quad C_m \approx 3 \, R \approx 25 \frac{J}{mol}  \qquad \mathrm{(Dulung-Petit)}$$
+$$ T > \Theta_D: \quad C_m \approx 3 \, R \approx 25 \frac{J}{mol \cdot K}  \qquad \mathrm{(Dulong-Petit)}$$
 
 $$ T \ll \Theta_D: \quad C_m = \frac{12 \cdot \pi^4}{5}  \cdot R \cdot  \Big( \frac{T}{\Theta_D}  \Big)^3 \qquad \mathrm{(Debye)}  $$
 
@@ -670,7 +670,9 @@ $$ T \ll \Theta_D: \quad C_m = \frac{12 \cdot \pi^4}{5}  \cdot R \cdot  \Big( \f
 
 
 
-\subsection{Latente Wärme (Schmelz-/ Verdampfungswärme)}
+
+
+\subsection{Latente Wärme, Enthalpie (Schmelz-/ Verdampfungswärme)}
 
 
 
@@ -692,7 +694,7 @@ versteckte Wärme wieder frei, \textbf{ohne} Abnahme der Temperatur \\
 
 $$ \boxed{ Q_f = q_f \cdot m } \qquad \qquad q_{f_{Wasser}} := 334 \mathrm{\frac{kJ}{kg}} $$
 
-$$ \boxed{ Q_S = q_s \cdot m } \qquad \qquad q_{s_{Wasser}} := 2256 \mathrm{\frac{kJ}{kg} } $$
+$$ \boxed{ Q_s = q_s \cdot m } \qquad \qquad q_{s_{Wasser}} := 2256 \mathrm{\frac{kJ}{kg} } $$
 
 
 
@@ -708,8 +710,8 @@ $$ \boxed{ Q_S = q_s \cdot m } \qquad \qquad q_{s_{Wasser}} := 2256 \mathrm{\fra
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -730,7 +732,7 @@ $$  \boxed{ \sum_{i=1}^n  ( \Delta Q_i + \Delta Q_{f_i} + \Delta Q_{s_i} ) = 0 }
 	$\Delta Q_{s_i}$ & i-te Wärme-Menge aus & $[\Delta Q_{s_i}] = \mathrm{J}$\\
 					 & Verdampfungs-/Kondensations-Vorgang &  \\
 	& +  zugeführte Wärme-Menge &  \\
-	& - abgeführterr Wärme-Menge & \\
+	& - abgeführter Wärme-Menge & \\
 \end{tabular}
 
 
@@ -751,15 +753,24 @@ $\bullet$ & \textbf{Gasförmig} \\
 		  & keine feste Gesalt; kein festes Volumen \\
 $\bullet$ & \textbf{Plasma} \\
 		  & Bei sehr hoher Temperatur ist Materie ionisiert (Elektronengas) \\
+$\bullet$ & \textbf{Mischung / Dispersion:} \\
 \end{tabular}
 
+\begin{center}
+	\begin{tabular}{l|cc}
+		                   & \textbf{flüssig} & \textbf{gasförmig} \\ \hline
+		\textbf{fest}      & Suspension (Sol) & Aerosol (Rauch) \\
+		\textbf{flüssig}   & Emulsion & Aerosol (Nebel) \\
+		\textbf{gasförmig} & Schaum & - \\
+	\end{tabular}
+\end{center}
 
 %\subsection{Zweiphasengebiete (pT-Diagramm}
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Dampfdruck $p_s(T)$}
@@ -781,8 +792,8 @@ Bei Kompression oder Expansion ändert sich der Dampfdruck nicht, sondern der An
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -796,7 +807,7 @@ $$ \boxed{ \frac{d \, p_s}{d\, T} = \frac{q_s}{T \cdot  \Big( \frac{1}{\rho_g} -
 
 \subsubsection{Dampfdruck $p_s(T)$ von Wasser (Clausius-Clapeyron)}
 
-$$ \boxed{ p_s(T) = p_{s0} \cdot e^{\frac{q_s \cdot M_W}{R}} \cdot \Big( \frac{1}{T_0} - \frac{1}{T} \Big)   } $$
+$$ \boxed{ p_s(T) = p_{s0} \cdot e^{\frac{q_s \cdot M_W}{R} \cdot ( \frac{1}{T_0} - \frac{1}{T}) } } $$
 
 $$ p_{s0} = 610.7 \, \mathrm{Pa} \quad T_0 = 273 \, \mathrm{K} \quad q_s = 2420 \, \mathrm{\frac{kJ}{kg}} \quad M_W = 18.02 \, \mathrm{\frac{g}{mol}}  $$
 
@@ -828,12 +839,15 @@ $$ \boxed{ \frac{d \, p_{sub}}{d\, T} = \frac{q_s + q_f}{T \cdot  \Big( \frac{1}
 	$p_g$ & Schmelzdruck & $[p_g] = \mathrm{Pa}$ \\
 	\rule{0pt}{10pt}$\rho_g$ & Dichte Gas & $[\rho_g] = \mathrm{\frac{kg}{m^3}}$ \\
 	\rule{0pt}{10pt}$\rho_f$ & Dichte Flüssgkeit & $[\rho_f] = \mathrm{\frac{kg}{m^3}}$ \\
-	\rule{0pt}{10pt}$\rho_s$ & DichteFestkörper & $[\rho_s] = \mathrm{\frac{kg}{m^3}}$ \\
+	\rule{0pt}{10pt}$\rho_s$ & Dichte Festkörper & $[\rho_s] = \mathrm{\frac{kg}{m^3}}$ \\
+	$T$ & Temperatur   & $[T] = K$ \\
+	$M$ & Molare Masse & $[M] = \frac{kg}{mol}$ \\
+	\rule{0pt}{8pt}$R$ & Universelle Gaskonstante: $R = 8.314 \mathrm{\frac{J}{mol \cdot K}}$ & $[R] = \mathrm{\frac{J}{mol \cdot K}} $ \\
 \end{tabular}
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -892,14 +906,9 @@ $$ \boxed{ f = \frac{m_W}{V}  } $$
 $$ \boxed{ f_r = \frac{m_W}{m_S} = \frac{p_D}{p_S} = \frac{p_D}{p_S(\theta)}  } $$
 
 
-%\subsubsection{Relative Luftfeuchtigkeit  $f_r$}
-
-%$$ \boxed{ f_r = \frac{p_D}{p_S} = \frac{p_D}{p_S(\theta)} } $$
-
-
 
 \begin{tabular}{c l c}
-	$f$ & Absolute Luftfeuchtigkeit & $[f] = 1$ \\
+	$f$ & Absolute Luftfeuchtigkeit & $[f] = \frac{kg}{m^3}$ \\
 	$f_r$ & Relative Luftfeuchtigkeit & $[f_r] = 1$ \\
 	$m_W$ & Masse Wasserdampf & $[m_W] = \mathrm{kg}$ \\
 	$m_S$ & Masse Wasserdampf bei Sättigung & $[m_S] = \mathrm{kg}$ \\
@@ -907,12 +916,11 @@ $$ \boxed{ f_r = \frac{m_W}{m_S} = \frac{p_D}{p_S} = \frac{p_D}{p_S(\theta)}  } 
 	$p_D$ & Partialdruck Wasserdampf & $[p_D] = \mathrm{Pa}$ \\
 	$p_S$ & Dampfdruck = Sättigungsdruck Wasserdampf & $[p_s] = \mathrm{Pa}$ \\
 	$\theta$ & Temperatur & $[\theta] = \text{°C}$ \\
-	
 \end{tabular}
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -920,13 +928,18 @@ $$ \boxed{ f_r = \frac{m_W}{m_S} = \frac{p_D}{p_S} = \frac{p_D}{p_S(\theta)}  } 
 
 \textbf{Feuchte Luft ist leichter als trockene Luft!}
 
-$$ \boxed{ \rho_F < \rho_T } \qquad \mathrm{(da} \, M_W < M_L \mathrm{)}$$
+% $$ \boxed{ \rho_f < \rho_t } \qquad \mathrm{(da} \, M_W < M_L \mathrm{)}$$
+
+$$ \boxed{ \rho_f = \rho_t + \frac{p_D}{RT}(M_W - M_L)} $$
 
 \begin{tabular}{c l c}
-	\rule{0pt}{10pt}$\rho_F$ & Dichte feuchte Luft & $[\rho_F] = \mathrm{\frac{kg}{m^3}}$ \\
-	\rule{0pt}{10pt}$\rho_T$ & Dichte trockene Luft & $[\rho_F] = \mathrm{\frac{kg}{m^3}}$ \\
+	\rule{0pt}{10pt}$\rho_f$ & Dichte feuchte Luft & $[\rho_f] = \mathrm{\frac{kg}{m^3}}$ \\
+	\rule{0pt}{10pt}$\rho_t$ & Dichte trockene Luft & $[\rho_t] = \mathrm{\frac{kg}{m^3}}$ \\
+	\rule{0pt}{10pt}$p_D$ & Partialdruck Wasserdampf & $[p_D] = \mathrm{Pa}$ \\
+	\rule{0pt}{10pt}$T$   & Temperatur & $[T] = K$ \\
 	\rule{0pt}{10pt}$M_W$ & Molmasse $H_2O$ & $[M_W] = \mathrm{\frac{kg}{mol}}$ \\
-	\rule{0pt}{10pt}$M_S$ & Molmasse Luft g & $[M_W] = \mathrm{\frac{g}{mol}}$ \\	
+	\rule{0pt}{10pt}$M_S$ & Molmasse Luft g & $[M_W] = \mathrm{\frac{g}{mol}}$ \\
+	\rule{0pt}{10pt}$R$ & Universelle Gaskonstante: $R = 8.314 \mathrm{\frac{J}{mol \cdot K}}$ & $[R] = \mathrm{\frac{J}{mol \cdot K}} $ \\	
 \end{tabular}
 
 
@@ -965,11 +978,11 @@ $$ \boxed{ f_{ri} = \frac{p_s(\theta_a)}{p_s(\theta_i)} \cdot f_{ra}  }$$
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
-\section{Kinetische Gas-Theorie}
+\section{Kinetische Gas-Theorie} %TODO: Evtl. Folie 6, Seite 5 noch einf¨ügen 
 
 \subsection{Aequipartitionsgesetz}
 
@@ -1014,17 +1027,17 @@ f = 6 & 3-atomiges Gas \\
 
 \subsubsection{Mittlere quadratische Geschwindigkeit  $u$}
 
-$$ \boxed{ u = \sqrt{\frac{3 \cdot k \cdot T}{m}} }  $$
+$$ \boxed{ u = \sqrt{\frac{3 \cdot k \cdot T}{m}} = \sqrt{\frac{3 \cdot R \cdot T}{M}} }  $$
 
 
 \subsubsection{Mittlere Geschwindigkeit $\overline{v}$}
 
-$$ \boxed{ \overline{v} = \sqrt{\frac{8 \cdot k \cdot T}{m}} }  $$
+$$ \boxed{ \overline{v} = \sqrt{\frac{8 \cdot k \cdot T}{\pi m}} = \sqrt{\frac{8 \cdot R \cdot T}{\pi M}} }  $$
 
 
 \subsubsection{Wahrscheinlichste Geschwindigkeit $v_0$}
 
-$$ \boxed{ v_0 = \sqrt{\frac{2 \cdot k \cdot T}{\pi \cdot m}}   }  $$
+$$ \boxed{ v_0 = \sqrt{\frac{2 \cdot k \cdot T}{m}} = \sqrt{\frac{2 \cdot R \cdot T}{M}}  }  $$
 
 
 
@@ -1033,6 +1046,8 @@ $$ \boxed{ v_0 = \sqrt{\frac{2 \cdot k \cdot T}{\pi \cdot m}}   }  $$
 	\rule{0pt}{8pt}$k$ & Boltzmann-Konstante $k = 1.381 \cdot 10^{-23} \mathrm{\frac{J}{K}}$ & $[k] = \mathrm{\frac{J}{K}}$ \\
 	$T$ & \textbf{absolute} Temperatur & $[T] = \mathrm{K}$ \\
 	$m$ & Masse des Teilchens & $[m] = \mathrm{kg}$ \\
+	$M$ & Molmasse & $[M] = \frac{kg}{mol}$ \\
+	\rule{0pt}{10pt}$R$ & Universelle Gaskonstante: $R = 8.314 \mathrm{\frac{J}{mol \cdot K}}$ & $[R] = \mathrm{\frac{J}{mol \cdot K}} $ \\	
 \end{tabular}
 
 
@@ -1062,7 +1077,7 @@ $$ \boxed{ \overline{\lambda} = \frac{1}{\sqrt{2}} \cdot \frac{1}{n \cdot (\pi \
 
 \begin{tabular}{c l c}
 	\rule{0pt}{8pt}$n$ & \textcolor{red}{Molekül-Dichte} & $[n] = \mathrm{\frac{1}{m^3}}$\\	
-	$d$ & Molekül-Durchmesser & $[d] = \mathrm{m^2}$ \\
+	$d$ & Molekül-Durchmesser & $[d] = \mathrm{m}$ \\
 \end{tabular}
 
 
@@ -1092,16 +1107,16 @@ $$ \boxed{ j_D = -D \cdot \frac{\mathrm{dn}}{\mathrm{dx}} \qquad \quad  D = \fra
 
 
 
-\subsubsection{Viskosität}
+\subsubsection{Viskosität ($v << v_{therm}$)}
 Transport von \textbf{Impuls} 
 
 
-$$ \boxed{ \tau = - \eta \cdot \frac{\mathrm{dv}}{\mathrm{dx}} \qquad \quad  \eta = \frac{1}{3} \cdot n \cdot \overline{v} \cdot \overline{\lambda} \cdot \rho }  $$
+$$ \boxed{ \tau = - \eta \cdot \frac{\mathrm{dv}}{\mathrm{dx}} \qquad \quad  \eta = \frac{1}{3} \cdot \overline{v} \cdot \overline{\lambda} \cdot \rho }  $$
 
 
 \begin{tabular}{c l c}
 	\rule{0pt}{10pt}$j_Q$ & Wärmestrom & $[j_Q] = \mathrm{\frac{W}{m^2}}$ \\
-	\rule{0pt}{10pt}$\lambda_Q$ & Wärmeleitfähigkeit & $[\lambda_Q] = \mathrm{\frac{W}{K}}$ \\
+	\rule{0pt}{10pt}$\lambda_Q$ & Wärmeleitfähigkeit & $[\lambda_Q] = \mathrm{\frac{W}{m \cdot K}}$ \\
 	$j_D$ & Diffusionsstrom & $[j_D] = ?$ \\
 	\rule{0pt}{10pt}$D$ & Diffusionskonstante & $[D] = \mathrm{\frac{m^2}{s}}$ \\
 	$\tau$ & Schubspannung & $[\tau] = \mathrm{N}$ \\
@@ -1139,7 +1154,7 @@ $\bullet$ & Für jede Wellenlänge muss ein Körper gleich viel  \\
 \begin{tabular}{ll}
 $\bullet$ & Ideal schwarzer Körper (Hohlraum) absoliert  \\
 		  & \textbf{alle Wellenlängen zu 100 \%}   \\		
-$\bullet$ & Je mehr ein Körper absoliert, desto mehr muss er \\
+$\bullet$ & Je mehr ein Körper absorbiert, desto mehr muss er \\
 		  & emmitieren \textbf{(Energie-Gleichgewicht)}   \\	
 		  \\
 \end{tabular}
@@ -1189,15 +1204,15 @@ $$ \boxed { \Delta E = h \cdot f }  $$
 
 \begin{tabular}{c l c}
 	$\Delta E$ & spektrale Abstrahlung (Energie) & $[\Delta E] = \mathrm{J}$ \\
-	$h$ & Panck'sches Wirkungsquantum & $[h] = \mathrm{J \cdot s} $\\
+	$h$ & Planck'sches Wirkungsquantum & $[h] = \mathrm{J \cdot s} $\\
 	&  $h = 6.628 \cdot 10^{-34} \, \mathrm{J \cdot s}$ &  \\
 	\rule{0pt}{8pt}$f$ & Frequenz des Photons & $ [f] = \mathrm{\frac{1}{s} = Hz}$ \\
 \end{tabular}
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Wärmetransport (an Beispiel Hauswand)}
@@ -1256,8 +1271,8 @@ $$ \textcolor{orange}{  \boxed{ P =  \dot{Q} = j \cdot A } } $$
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -1269,7 +1284,7 @@ Der komplette Wärmedurchgang leitet sich her durch die \textbf{Erhaltung der W�
 
 $$ \boxed{\mathrm{n \; Schichten:} \quad \frac{1}{k_{tot}} = \frac{1}{\alpha_i} + \sum_x  \frac{1}{k_x} + \frac{1}{\alpha_a}  }  $$
 
-$$ \boxed{\mathrm{zylindrisch:} \quad \frac{1}{k_{tot}} = r_a \Big(  \frac{1}{\alpha_i \cdot r_i} + \sum_x \frac{1}{\lambda_x} \cdot \ln \big( \frac{r_{xa}}{r_{xi}} \big) \Big) + \frac{1}{\alpha_a} \cdot \frac{1}{r_a}  }  $$
+$$ \boxed{\mathrm{zylindrisch:} \quad \frac{1}{k_{tot}} = r_a \Big(  \frac{1}{\alpha_i \cdot r_i} + \sum_x \frac{1}{\lambda_x} \cdot \ln \big( \frac{r_{xa}}{r_{xi}} \big)  + \frac{1}{\alpha_a \cdot r_a} \Big) }  $$
 
 
 
@@ -1322,8 +1337,8 @@ $$ \boxed{ \mathrm{allgemein: } \quad \dot{Q}_{tot} = \sum_{i=1}^n  \big[  (A_i 
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 
@@ -1406,8 +1421,8 @@ $$ \boxed{ \Delta Q = 0} $$
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \section{Rückwandlung innerer Energie}
@@ -1487,8 +1502,8 @@ $$ \boxed{\text{ \textcolor{violet}{Wärmepumpe:}} \quad  n_{iC} = \frac{Q_{zu}}
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Adiabaten-Gleichung (Kreisprozess)}
@@ -1548,8 +1563,8 @@ isochore Abkühlung & ohne Arbeit & liefert Wärme \\
 
 
 
-\vfill\null
-\columnbreak
+% \vfill\null
+% \columnbreak
 
 
 \subsection{Entropie-Zunahme}
