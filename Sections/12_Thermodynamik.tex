@@ -53,9 +53,9 @@ $$ \boxed{ A' = A + \Delta \,  A = A + \underbrace{  \beta }_{\substack{\approx 
 
 
 \begin{tabular}{c l c}
-		$A'$ & Länge nach Ausdehnung & $[A'] = \mathrm{m^2}$ \\
-		$A$ & Anfangslänge & $[A] = \mathrm{m^2}$ \\
-		$\Delta \, A$ & Längenänderung & $[\Delta \, A] = \mathrm{m^2}$ \\
+		$A'$ & Fläche nach Ausdehnung & $[A'] = \mathrm{m^2}$ \\
+		$A$ & Anfangsfläche & $[A] = \mathrm{m^2}$ \\
+		$\Delta \, A$ & Flächenänderung & $[\Delta \, A] = \mathrm{m^2}$ \\
 		\rule{0pt}{8pt}$\beta$ & Flächenausdehnungskoeffizient & $[\beta] = \mathrm{\frac{1}{K}}$ \\ 
 		$\Delta \, T $ & Temperaturänderung & $[\Delta \, T ] = \mathrm{K}$ \\
 \end{tabular}
@@ -593,7 +593,7 @@ $$ \boxed{ Q = c \cdot m \cdot \Delta T = n \cdot c_M \cdot \Delta T = C \cdot \
 \subsubsection{Absolute Wärmekapazität $C$}
 Energiespeicher-Vermögen eines \textbf{Gegenstands}
 
-$$ \boxed{ \Delta Q = C \cdot \Delta T } $$
+$$ \boxed{ \Delta Q = C \cdot \Delta T \quad \quad C\frac{\Delta T}{\Delta t} = \dot{Q}} $$
 
 
 \subsubsection{Spezifische Wärmekapazität $c$}
@@ -938,7 +938,7 @@ $$ \boxed{ \rho_f = \rho_t + \frac{p_D}{RT}(M_W - M_L)} $$
 
 \begin{tabular}{c l c}
 	\rule{0pt}{10pt}$\rho_f$ & Dichte feuchte Luft & $[\rho_f] = \mathrm{\frac{kg}{m^3}}$ \\
-	\rule{0pt}{10pt}$\rho_t$ & Dichte trockene Luft & $[\rho_t] = \mathrm{\frac{kg}{m^3}}$ \\
+	\rule{0pt}{10pt}$\rho_t$ & Dichte trockene Luft ($ \frac{p_0 M_L}{RT} $) & $[\rho_t] = \mathrm{\frac{kg}{m^3}}$ \\
 	\rule{0pt}{10pt}$p_D$ & Partialdruck Wasserdampf & $[p_D] = \mathrm{Pa}$ \\
 	\rule{0pt}{10pt}$T$   & Temperatur & $[T] = K$ \\
 	\rule{0pt}{10pt}$M_W$ & Molmasse $H_2O$ (18g/mol) & $[M_W] = \mathrm{\frac{kg}{mol}}$ \\
@@ -1248,7 +1248,7 @@ $$ \boxed{\mathrm{aussen:} \quad  j = \alpha_a \cdot (T_{wa} - T_a )  \qquad \ma
 
 
 \subsubsection{Wärmedurchgang}
-Material + Dicke zusammengefasst
+Material + Dicke zusammengefasst (\textbf{Bereich von $k$ beachten!!})
 
 $$ \boxed{ j = k \cdot (T_i - T_a) = k \cdot \Delta T  \qquad \mathrm{mit} \, k = \frac{\lambda}{d} }  $$ 
 
@@ -1270,7 +1270,7 @@ $$ \boxed{ j = k \cdot (T_i - T_a) = k \cdot \Delta T  \qquad \mathrm{mit} \, k 
 \end{tabular}
 
 
-$$ \textcolor{orange}{  \boxed{ P =  \dot{Q} = j \cdot A } } $$ 
+$$ \textcolor{orange}{  \boxed{ P =  \dot{Q} = j \cdot A } } \quad \text{siehe auch \ref{Wärmeleistung}} $$
 
 
 
@@ -1306,7 +1306,7 @@ $$ \boxed{\mathrm{zylindrisch:} \quad \frac{1}{k_{tot}} = r_a \Big(  \frac{1}{\a
 
 
 
-\subsection{Wärme-Bedarf (Heizleistung)}
+\subsection{Wärme-Bedarf (Heizleistung)}\label{Wärmeleistung}
 Der Wärme-Bedarf (=Heizleistung) setzt sich zusammen aus \textbf{Wärmeverlust durch Wärmeleitung} und durch \textbf{Wärmeverlust durch Luftaustausch}: 
 
 $$\mathrm{\underbrace{W"armeverlust}_{\substack{\dot{Q}}}  = \underbrace{Heizleistung}_{\substack{P}}  }   $$
@@ -1329,10 +1329,10 @@ $$ \boxed{ \mathrm{allgemein: } \quad \dot{Q}_{tot} = \sum_{i=1}^n  \big[  (A_i 
 
 \begin{tabular}{c l c}
 	\rule{0pt}{10pt}$\dot{Q}_{tot}$ & Totaler Wärmeverlust & $[\dot{Q}_{tot}] = \mathrm{\frac{J}{s} = W}$ \\
-	\rule{0pt}{10pt}$\dot{Q}_W$ & Wärmeleitung & $[\dot{Q}_W] = \mathrm{\frac{J}{s} = W}$ \\
+	\rule{0pt}{10pt}$\dot{Q}_W$ & Wärmeleistung & $[\dot{Q}_W] = \mathrm{\frac{J}{s} = W}$ \\
 	\rule{0pt}{10pt}$\dot{Q}_L$ & Luftaustausch & $[\dot{Q}_L] = \mathrm{\frac{J}{s} = W}$ \\
 	\rule{0pt}{10pt}$k_i$ & Wärmedurchgangszahl i-te Schicht & $[k_i] = \mathrm{\frac{W}{m^2 \cdot K}}$ \\
-	\rule{0pt}{10pt}$\dot{V}$ & Volumenstrom & $[\dot{V}] = \mathrm{\frac{m^3}{s}}$ \\
+	\rule{0pt}{10pt}$\dot{V}$ & Volumenstrom ($\dot{V} = \frac{V}{t}$) & $[\dot{V}] = \mathrm{\frac{m^3}{s}}$ \\
 	\rule{0pt}{10pt}$\rho_L$ & Dichte der Luft: $\rho_L = 1.2 \, \mathrm{\frac{kg}{m^3}}$ & $[\rho_L] = \mathrm{\frac{kg}{m^3}}$ \\
 	\rule{0pt}{10pt}$c_L$ & Wärmekapazität Luft: $c_L = 1000 \, \mathrm{\frac{J}{kg \cdot K}}$ & $[c_L] = \mathrm{\frac{J}{kg \cdot K}}$ \\
 	$A$ & Fläche der Wärmeleitung & $[A] = \mathrm{m^2}$ \\
@@ -1415,11 +1415,11 @@ $$ \boxed{ \Delta Q_{zu} = n \cdot C_{mV} \cdot \Delta T }  \quad  (\Delta U = \
 \textbf{ohne Wärme-Austausch} \\
 
 
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{ W_{ab} = n \cdot C_{mV} \cdot \Delta T }  $$
+\begin{minipage}{0.58\linewidth}
+$$ \boxed{ W_{ab} = n \cdot C_{mV} \cdot \Delta T = c \cdot m \cdot \Delta T}  $$
 \end{minipage}
 \hfill
-\begin{minipage}{0.48\linewidth}
+\begin{minipage}{0.38\linewidth}
 $$ \boxed{ \Delta Q = 0} $$
 \end{minipage}
 
