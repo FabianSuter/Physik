@@ -35,37 +35,37 @@ Welle \\
 \end{minipage}
 
 \textbf{Lichtfarben und ihre Frequenzen / Wellenlängen} \\
-\\
-\begin{tabular}{| l | c |}
-	\hline
-	\textbf{Farbe} & \textbf{Wellenlänge in $\mathrm{nm}$} \\
-	\hline
-	\color{red!50!blue!80!white}violett & 380 ... 435 \\
-	\hline
-	\color{blue}blau & 435 ... 465 \\
-	\hline
-	\color[HTML]{35c2bd}blaugrün & 465 ... 485 \\
-	\hline
-	\color{green!80!black}grün & 485 ... 565 \\
-	\hline
-	\color{yellow!75!red}gelb & 565 ... 590 \\
-	\hline
-	\color{orange}orange & 590 ... 630 \\
-	\hline
-	\color{red}rot & 630 ... 780 \\
-	\hline
-\end{tabular}
-
-
-
-% \vfill\null
-% \columnbreak
-
-$$ \boxed{ \lambda = \frac{c}{f} } $$
+\begin{minipage}{0.5\linewidth}
+	\begin{tabular}{| l | c |}
+		\hline
+		\textbf{Farbe} & \textbf{Wellenlänge in $\mathrm{nm}$} \\
+		\hline
+		\color{red!50!blue!80!white}violett & 380 ... 435 \\
+		\hline
+		\color{blue}blau & 435 ... 465 \\
+		\hline
+		\color[HTML]{35c2bd}blaugrün & 465 ... 485 \\
+		\hline
+		\color{green!80!black}grün & 485 ... 565 \\
+		\hline
+		\color{yellow!75!red}gelb & 565 ... 590 \\
+		\hline
+		\color{orange}orange & 590 ... 630 \\
+		\hline
+		\color{red}rot & 630 ... 780 \\
+		\hline
+	\end{tabular}
+\end{minipage}
+	\hfill
+\begin{minipage}{0.5\linewidth}
+	\begin{center}
+		$$ \boxed{ \lambda = \frac{c}{f} } $$
+	\end{center}
+\end{minipage}
 
 \begin{tabular}{c l c}
 	$\lambda$ & Wellenlänge & $[\lambda] = \m$ \\
-	$c$ & Lichtgeschwindigkeit $c = 300 \cdot 10^6 \, \mathrm{\frac{m}{s}}$ & $[c] = \mathrm{\frac{m}{s}}$ \\
+	$c$ & Lichtgeschw. $c = 299'792'458 \mathrm{\frac{m}{s}}$ & $[c] = \mathrm{\frac{m}{s}}$ \\
 	$f$ & Frequenz & $[f] = \mathrm{\frac{1}{s} = Hz}$ \\
 \end{tabular}
 
@@ -125,8 +125,8 @@ Sobald die Elektronen wieder in ihren Grundzustand zurückkehren wird ein Lichtq
 Die Leuchtfarbe wird durch die \\
 Frequenz der Anregung bestimmt. \\
 \\
-Fluoreszenz: kein Nachleuchten \\
-Phosphoreszenz: mit Nachleuchten \\
+\textbf{Fluoreszenz}: kein Nachleuchten \\
+\textbf{Phosphoreszenz}: mit Nachleuchten \\
 \end{minipage}
 
 % \vfill\null
@@ -145,7 +145,7 @@ Radiometrische Grössen, gewichtet mit dem photometrischen Strahlungsäquivalent
 \\
 \textbf{Photometrischen Strahlungsäquivalent $K$} \\
 Gibt die Empfindlichkeit des menschlichen Auges wieder und ist eine empirisch genormte Kurve \\
-$\Rightarrow$ Das menschliche Auge ist bei einer Wellenlänge von $555 \, \mathrm{nm}$ \\ (grüne Farbe) am empfindlichsten. 
+$\Rightarrow$ Das menschliche Auge ist bei einer Wellenlänge von $555 \, \mathrm{nm}$ \\ (grüne Farbe) am empfindlichsten. (638 $\frac{lm}{W}$)
 
 
 
@@ -159,7 +159,7 @@ $\Rightarrow$ Das menschliche Auge ist bei einer Wellenlänge von $555 \, \mathr
 
 \subsection{Raumwinkel}
 
-\subsubsection{Winkel in der Ebene}
+\subsubsection{Winkel in der Ebene (Radiant)}
 
 \begin{minipage}{0.4\linewidth}
 \includegraphics[width=\linewidth]{Bilder/Wellen-Optik/winkel_ebene}
@@ -174,7 +174,7 @@ Vollkreis: $2 \, \pi$ \qquad $[\alpha] = \mathrm{rad}$
 \end{minipage}
 
 
-\subsubsection{Winkel im Raum}
+\subsubsection{Winkel im Raum (Steradiant)}
 
 \begin{minipage}{0.35\linewidth}
 \includegraphics[width=\linewidth]{Bilder/Wellen-Optik/winkel_raum}
@@ -185,7 +185,7 @@ Aufgespannte Fläche, projiziert auf eine Kugel mit $r = 1 \, \m$
 
 $$ \boxed{ \Omega = \frac{A}{r^2} = \frac{A}{1 \m^2} } $$
 
-Kugel: $4 \, \pi$ \qquad $[\Omega] = \mathrm{sr}$ (Steradiant) 
+Kugel: $4 \, \pi$ \qquad $[\Omega] = \mathrm{sr}$ 
 \end{minipage}
 
 % \vfill\null
@@ -219,30 +219,23 @@ $$ \boxed{ \varepsilon = \varepsilon' } $$
 \subsubsection{Grenzflächen von Reflexionen}
 
 \begin{minipage}{0.4\linewidth}
-
 \includegraphics[width=\linewidth]{Bilder/Wellen-Optik/reflexion} \\
 \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.58\linewidth}
-\begin{tabular}{ll}
-$L$ & reelles Bild \\
-    & Bild, welches auf Schirm \\
-    & abgebildet werden kann \\ 
-    \\
-$L'$& virtuelles Bild (Spiegelbild von $L$)\\
-    & Bild, welches nicht auf Schirm \\
-    & abgebildet werden kann \\
-\end{tabular}
-
+	\begin{tabular}{ll}
+		$L$ & \textbf{reelles Bild} \\
+			& Bild, welches auf Schirm \\
+			& abgebildet werden kann \\ 
+			\\
+		$L'$& \textbf{virtuelles Bild} \scriptsize(Spiegelbild von $L$)\normalsize\\
+			& Bild, welches nicht auf Schirm \\
+			& abgebildet werden kann \\
+	\end{tabular}
 \end{minipage}
 
-
-\begin{tabular}{ll}
-glatter Spiegel: & direkte Reflexion (siehe Bild oben) \\
-rauher Spiegel: &diffuse Refelxion \\
-\end{tabular}
-
+\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/rau-glatt.jpg}
 
 \subsection{Reflexionen - Spezialfälle}
 
@@ -380,6 +373,14 @@ Der Lichtstrahl bliebt in der Kernzone (Medium 1) gefangen, da diese einen grös
 
 \includegraphics[width=0.75\linewidth]{Bilder/Wellen-Optik/glasfaser}
 
+\textbf{Extremfall} (\textit{Numerical Aperture} NA = $nsin\theta_{max}$):\\
+\includegraphics[width=0.8\linewidth]{Bilder/Wellen-Optik/glasfaser-2.jpg}
+
+\begin{center}
+	$ \boxed{n_0sin\theta_{max} = \sqrt{n^2_{core} - n^2_clad}} $ 
+\end{center}
+
+
 
 
 
@@ -459,6 +460,22 @@ DIE Anwendung der Brechung ist eine Linse.
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/linsen}\\
 
 Rechts gibt es ein kleineres Bild als links.
+
+\subsubsection{Typische Brechungswerte}
+
+\begin{tabular}{| l | c |}
+	\hline
+	\textbf{Material} & \textbf{Brechungsindex $n$ für $\lambda$ = 589 nm} \\ \hline
+	Luft (Normalbed.)        & 1.000'292 \\ \hline
+	Helium (Normalbed.)      & 1.000'034'911 \\ \hline
+	Wasser (20°C)            & 1.33 \\ \hline
+	Glycerin                 & 1.47 \\ \hline
+	Quarzglas                & 1.54 \\ \hline
+	Plexiglas                & 1.51 \\ \hline
+	Kronglas                 & 1.52 \\ \hline
+	Brillenglas (Kunststoff) & bis 1.76 \\ \hline
+	Diamant                  & 2.42 \\ \hline
+\end{tabular}
 
 
 
