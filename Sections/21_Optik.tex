@@ -512,9 +512,9 @@ Grosse Abbe-Zahl $\rightarrow$ wenig dispersives Material
 Man benutzt zwei der drei Hauptstrahlen: \\
 
 \begin{tabular}{l l c l}
-1. & Parallel Strahl & $\rightarrow$ & Brennpunkt \\
-2. & Mittelpunkt Strahl & $\rightarrow$ & mit gleichem Winkel zurück \\
-3. & Brennpunkt Strahl & $\rightarrow$ & Paralleler Strahl \\
+1. & Paralleler Strahl & $\rightarrow$ & Brennpunkt \\
+2. & Mittelpunkt-Strahl & $\rightarrow$ & mit gleichem Winkel zurück \\
+3. & Brennpunkt-Strahl & $\rightarrow$ & Paralleler Strahl \\
 \\
 \end{tabular}
 
@@ -540,9 +540,9 @@ $B$ wird als \textbf{virtueller Bildpunkt} bezeichnet, wenn sich nur die Verlän
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/terminologie} \\
 
-Die \textbf{Öffnungsblende} oder \textbf{Aperturblende} bergrenz das in das System einfallende Lichtbündel \\
+Die \textbf{Öffnungsblende} oder \textbf{Aperturblende} begrenzt das in das System einfallende Lichtbündel \small (Irisblenden, Linsenfassungen)\normalsize \\
 \\
-Die \textbf{Feldblende} begrenzt das Bildfeld. Sie legt den Ausschnitt der Objektebene fest, der abgebildet wird.
+Die \textbf{Feldblende} begrenzt das Bildfeld. Sie legt den Ausschnitt der Objektebene fest, der abgebildet wird. \small (Foto-, Filmkamera: Formatrahmen) \normalsize
 
 
 \subsubsection{Beispiel: Abbildungen bei zwei Sammellinsen}
@@ -567,19 +567,28 @@ Die \textbf{Feldblende} begrenzt das Bildfeld. Sie legt den Ausschnitt der Objek
 
 
 \begin{minipage}{0.48\linewidth}
-\center{ \textbf{Abbildungsgleichung} }
-
-$$ \boxed{ \frac{1}{b} + \frac{1}{g} = \frac{1}{f} } $$
+	\begin{center}
+		\textbf{Abbildungsgleichung} \\
+		$$ \boxed{ \frac{1}{b} + \frac{1}{g} = \frac{1}{f} } $$
+	\end{center}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-\center{ \textbf{Newtonsche Abb.-Gleichung} }
-
-$$ \boxed{ x_b \cdot x_g = f^2 } $$
+	\begin{center}
+		\textbf{Newtonsche Abb.-Gleichung} \\
+		$$ \boxed{ x_b \cdot x_g = f^2 } $$
+	\end{center}
 \end{minipage}
 
 
-\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/abbildungsgleichung}  \\
+\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/abbildungsgleichung}
+\begin{minipage}{0.50\linewidth}
+	\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/abbildungsgleichung-1.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+	\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/abbildungsgleichung-2.png}
+\end{minipage}
 
 \textcolor{blue}{ \textbf{Hinweis:} Ein Spiegel hat eine Brennweite von $f = \infty$ \\
 $\Rightarrow$ Vereinfachung der Abbildungsgleichung!}
@@ -661,8 +670,15 @@ $$\boxed{f = \frac{1}{D} = \frac{R}{2}\frac{1}{(n - 1)}} $$ \\
 \end{tabular}
 
 
+\subsubsection{Kombination von zwei Linsen}
 
-
+\begin{minipage}{0.48\linewidth}
+	$$ \boxed{\frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2} - \frac{d}{f_1f_2}} $$
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+	$$ \boxed{f = \frac{f_1f_2}{f_1 + f_2 - d}} $$
+\end{minipage}
 
 \subsubsection{Kombination von zwei dünnen Linsen ohne Zwischenraum}
 
@@ -681,6 +697,8 @@ $$ \boxed{D = D_1 + D_2} $$
 \textbf{Konkav:} nach innen gewölbt
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/Konvex}
+
+\qquad\qquad Sammellinsen \qquad\qquad\qquad Zerstreuungslinsen
 
 
 
@@ -708,7 +726,7 @@ vom idealisierten Fall. \\
 $E_x$ und $E_y$ können \textbf{unterschiedliche Amplituden} haben. \\
 Die \textbf{Phasen müssen gleich} sein.\\
 \\
-EM-Wellen können mit dem Herzsches Gitter oder mit dem \textbf{Brewster Winkel} linear Polarisiert werden.
+EM-Wellen können mit dem Herzsches Gitter oder mit dem \textbf{Brewster Winkel} linear polarisiert werden.
 
 \begin{minipage}{0.48\linewidth}
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/lineare_Polarisation}
@@ -750,7 +768,7 @@ $$ \boxed{  \tan(\varepsilon) = \frac{n_2}{n_1}  }$$
 $x$ und $y$ Komponenten haben die \textbf{gleiche Amplitude} und eine \textbf{Phasendifferenz von 90°} \\
 
 Positive zirkulare Polarisation $\sigma ^+$ \\
-Positive zirkulare Polarisation $\sigma ^-$ \\
+Negative zirkulare Polarisation $\sigma ^-$ \\
 
 
 \begin{minipage}{0.48\linewidth}
@@ -805,15 +823,15 @@ Streuung des Lichts an Teilchen von Dimensionen $d >> \lambda$ \\
 \begin{minipage}{0.53\linewidth}
 
 \begin{itemize}
-
 \item Licht als \textbf{Strahlen}
 \item Reflexion in alle Richtungen
-\item Keine bevorzugte Richtung \\
-	 unabhängig von $\lambda$ 
-\item Wolken, Nebel 
-\item milchiche Lösungen 	  
-
-%\endMyItemize
+\item Keine bevorzugte Richtung, \\
+	  unabhängig von $\lambda$ 
+\item Beispiele:
+	\begin{itemize}
+		\item Wolken, Nebel 
+		\item milchige Lösungen
+	\end{itemize}	  
 \end{itemize}
 
 \end{minipage}
@@ -852,6 +870,9 @@ $\Rightarrow$ hochfrequentes Licht wird viel stärker abgestrahlt! \\
 
 \subsection{Abbildungssysteme - Auge}
 
+\textbf{Brechzahl Augenlinse}: 1.3\\
+\textbf{Tiefe}: $\sim$25mm
+
 \subsubsection{Terminologie des Auges}
 
 \textbf{Sehwinkel $\varepsilon$}
@@ -885,7 +906,7 @@ $$ \boxed{ S = \frac{1}{\varepsilon _{min}} \qquad \text{beim Menschen also } S 
 
 
 
-\textbf{Deutlische Sehweite  $s$ (normierte Betrachtungsdistanz)} \\
+\textbf{Deutliche Sehweite  $s$ (normierte Betrachtungsdistanz)} \\
 
 Damit die Vergrösserungen von Lupen und Mikroskopen eindeutig \\
 bestimmt werden können, wird eine \textbf{deutliche Sehweite} definiert:
@@ -930,7 +951,7 @@ $$ \boxed{ s = 25 \, \mathrm{cm} = 0.25 \, \mathrm{m}  } $$
 
 \subsection{Abbildungssysteme - Fotoapparat}
 
-\textbf{Bildgrösse $B$} 
+\textbf{Bildgrösse $B [m]$} 
 
 \begin{minipage}{0.48\linewidth}
 Die Bildweite $b$ ist normalerweise viel kleiner als die
@@ -942,7 +963,7 @@ $$ \boxed{ B = \frac{f}{g} \, G }$$ \\
 \end{minipage}
 
 
-\textbf{Lichtstärke $H$} 
+\textbf{Lichtstärke $H [\frac{W}{m^2}]$} 
 
 \begin{minipage}{0.48\linewidth}
 Die Intensität des Lichts auf dem Film ist gegeben durch \\
@@ -967,12 +988,15 @@ $$ \boxed{ Z = \frac{1}{q} = \frac{1}{\sqrt{H}}  } $$ \\
 
 
 
-\textbf{Belichtungszeit} 
+\textbf{Belichtung $E$, Belichtungszeit $t$} 
 
-Zusammenhang zwischen Blendenzahl $H$ und Lichtstärke $Z$ \\
-
-$$ \boxed{ H = \frac{1}{Z^2} } $$ \\
- 
+\begin{minipage}{0.4\linewidth}
+	$$ \boxed{ E = Ht \approx q^2t } $$
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\linewidth}
+	$$ \boxed{t = \frac{G}{v} = \frac{g}{f}\frac{B}{v}} $$
+\end{minipage} 
 
 
 \textbf{Schärfentiefe} 
@@ -1008,7 +1032,8 @@ $$\boxed{ \frac{1}{g} = \frac{1}{g_0} \pm \frac{u}{q \, f^2}  } $$
 	$G_0$ & $\text{Gegenstandsgrösse}_0$ & $[G_0] = \m$ \\
 	$f$ & Brennweite & $[f] = \m$ \\
 	$u$ & Durchmesser Unschärfekreis & $[d] = \m$ \\
-	$d$ & Durchmesser Blendenöffnung & $[d] = \m$
+	$d$ & Durchmesser Blendenöffnung & $[d] = \m$ \\
+	$v$ & Geschw. des zu fotograf. Objekts & $[v] = \frac{m}{s}$
 \end{tabular}
 
 
@@ -1048,7 +1073,7 @@ Es wird zuerst ein vergrössertes Bild erzeugt, welchs selber wiederum mit einer
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/fernrohr} \\
 
-$$ \boxed{ V = \frac{\tan(\varepsilon)}{\tan(\varepsilon_0)} = \frac{\frac{B}{f_2}}{\frac{B}{f_1} } = \frac{f_1}{f_2}  } $$
+$$ \boxed{ V = \frac{\tan(\varepsilon)}{\tan(\varepsilon')} = \frac{\frac{B}{f_2}}{\frac{B}{f_1} } = \frac{f_1}{f_2}  } $$
 
 
 % \vfill\null
@@ -1061,7 +1086,7 @@ Es wird zuerst ein vergrössertes Bild erzeugt, welchs selber wiederum mit einer
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/mikroskop} \\
 
-$$ \boxed{ V = \frac{\Delta \cdot s}{f_1 \cdot f_2} = \frac{\tan(\varepsilon)}{\tan(\varepsilon_0)} = \frac{\frac{b}{f_2}}{\frac{G}{s}} = \frac{B}{G} \frac{s}{f_2} = \frac{b_1}{g_1} \frac{s}{f_2} } $$
+$$ \boxed{ V = \frac{\Delta \cdot s}{f_1 \cdot f_2} = \frac{\tan(\varepsilon)}{\tan(\varepsilon_0)} = \frac{\frac{B}{f_2}}{\frac{G}{s}} = \frac{B}{G} \frac{s}{f_2} = \frac{b_1}{g_1} \frac{s}{f_2} } $$
 
 
 \begin{tabular}{c l c}
@@ -1083,10 +1108,13 @@ $$ \boxed{ V = \frac{\Delta \cdot s}{f_1 \cdot f_2} = \frac{\tan(\varepsilon)}{\
 
 \subsection{Farbentheorie}
 
-\begin{tabular}{ll}
-Spektralfarben: &  Die gesamten Lichtfarben \\
-Monochromatisches Licht: & Nur eine einzige Wellenlänge (Farbe) 
-\end{tabular}
+\begin{tabularx}{\linewidth}{lX}
+	Spektralfarben: & Die gesamten Lichtfarben \\
+	Mischfarben:    & Mischung von versch. Spektralfarben \\
+	Grundfarben:    & Ein Set, um alle Mischfarben zu erzeugen \\
+	Komplementärfarben: & Mischfarbe, die bleibt, wenn von weissem Licht eine Farbe ausgeblendet wird \\
+	Monochromatisches Licht: & Nur eine einzige Wellenlänge (Farbe) 
+\end{tabularx}
 
 
 
