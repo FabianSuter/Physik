@@ -440,7 +440,51 @@ $f$ & Frequenz der gedämpften Schwingung & $[f] = \Hz$
 \subsubsection{Definition}
 
 Erzwungene Schwingungen sind Schwingungen, die durch eine \\
-\textbf{periodische Störung} verursacht werden.
+\textbf{periodische Störung} verursacht werden. (EN: \textit{driven oscillation})
+
+\subsubsection{Übersicht über Hilfsgrössen}
+
+\fbox{\parbox{0.8\linewidth}{
+
+\begin{tabular}{c c c c c}
+$\omega_0 = \sqrt{\frac{k}{m}}$ & &  $\delta = \frac{\kappa}{2} = \frac{b}{2 \, m}$ & & $ D = \frac{\delta}{\omega_0} =  \frac{\kappa}{2 \, \omega_0}$\\
+\\
+\end{tabular}
+ 
+ 
+\begin{tabular}{c c c}
+$\eta = \frac{\omega}{\omega_0}$ & & $\Omega_d = \sqrt{\omega_0^2 - \big( \frac{\kappa}{2} \big) ^2} =  \omega_0 \sqrt{1 - D^2}$\\
+\end{tabular}
+}}
+
+\begin{tabular}{c l c}
+\rule{0pt}{10pt} $\omega_0$ & Kreisfrequenz ungedämpfte Schwingung & $[\omega_0] = \frac{\rad}{\s}$ \\
+\rule{0pt}{10pt} $\Omega_d$ & Kreisfrequenz gedämpfte Eigenfrequenz & $[\Omega_d] = \frac{\rad}{\s}$ \\
+\rule{0pt}{10pt} $\omega_r$ & Resonanzkreisfrequenz & $[\omega_r] = \frac{\rad}{\s}$ \\
+\rule{0pt}{10pt} $\omega$ & Kreisfrequenz der Störung (Erreger) & $[\omega] = \frac{\rad}{\s}$ \\
+\rule{0pt}{10pt} $\frac{\kappa}{2} = \delta $ & Abklingkonstante & $[\kappa] = \frac{1}{\s}$ \\
+\rule{0pt}{10pt} $D$ & Dämpfungsgrad & $[D] = 1$ \\
+$\eta$ & Dimensionslose Frequenz & $[\eta] = 1$  \\
+$k = c$ & Federkonstante & $[k] = \frac{\N}{\m}$
+\end{tabular}
+
+\subsubsection{Resonanz}
+
+Die Amplitude $A$ wird maximal, wenn der Nenner von $A(\omega)$ minimal wird 
+
+\begin{minipage}{0.48\linewidth}
+    \begin{center}
+        Resonanzkreisfrequenz:
+        $$ \boxed{ \omega_r = \omega_0 \sqrt{1 - 2 \, D^2} } $$
+    \end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+    \begin{center}
+        Resonanzamplitude:
+        $$ \boxed{ A_r = \frac{u_0}{2 \, D \sqrt{1 - D^2}} }$$
+    \end{center}    
+\end{minipage}
 
 
 
@@ -450,7 +494,7 @@ Erzwungene Schwingungen sind Schwingungen, die durch eine \\
 $$ \boxed{ \text{DGL: } m \, \ddot{y} + b \, \dot{y} + c \, y = F_0 \, \sin(\omega \, t)  } $$  
 
 
-$$ y(t) = \underbrace{ A(\omega) \, \sin(\omega \, t - \varphi) }_{\substack{y_p(t)}} + \underbrace{ B \, e^{- \frac{\kappa}{2} t} \sin(\omega_d \, t + \varphi_0)}_{\substack{y_h(t)}} $$
+$$ y(t) = \underbrace{ A(\omega) \, \sin(\omega \, t - \varphi) }_{\substack{y_p(t)}} + \underbrace{ B \, e^{- \delta t} \sin(\Omega_d \, t + \varphi_0)}_{\substack{y_h(t)}} $$
 
 \begin{minipage}{0.3\linewidth}
 $$ \boxed{ \varphi = \arctan \Big( \frac{2 D \omega_0 \omega}{\omega_0^2 - \omega^2}   \Big) } $$ \\
@@ -467,49 +511,8 @@ $\varphi$ & Phasenverschiebung & $[\varphi] = \rad$
 \end{tabular}
 
 
-
-\subsubsection{Übersicht über Hilfsgrössen}
-
-\fbox{\parbox{0.8\linewidth}{
-
-\begin{tabular}{c c c c c}
-$\omega_0 = \sqrt{\frac{k}{m}}$ & &  $\delta = \frac{\kappa}{2} = \frac{b}{2 \, m}$ & & $ D = \frac{\delta}{\omega_0} =  \frac{\kappa}{2 \, \omega_0}$\\
-\\
-\end{tabular}
- 
- 
-\begin{tabular}{c c c}
-$\eta = \frac{\omega}{\omega_0}$ & & $\omega_d = \sqrt{\omega_0^2 - \big( \frac{\kappa}{2} \big) ^2} =  \omega_0 \sqrt{1 - D^2}$\\
-\end{tabular}
-}}
-
-\begin{tabular}{c l c}
-\rule{0pt}{10pt} $\omega_0$ & Kreisfrequenz ungedämpfte Schwingung & $[\omega_0] = \frac{\rad}{\s}$ \\
-\rule{0pt}{10pt} $\omega_d$ & Kreisfrequenz gedämpfte Eigenfrequenz & $[\omega_d] = \frac{\rad}{\s}$ \\
-\rule{0pt}{10pt} $\omega_r$ & Resonanzkreisfrequenz & $[\omega_r] = \frac{\rad}{\s}$ \\
-\rule{0pt}{10pt} $\omega$ & Kreisfrequenz der Störung (Erreger) & $[\omega] = \frac{\rad}{\s}$ \\
-\rule{0pt}{10pt} $\frac{\kappa}{2}$ & Abklingkonstante & $[\kappa] = \frac{1}{\s}$ \\
-\rule{0pt}{10pt} $D$ & Dämpfungsgrad & $[D] = 1$ \\
-$\eta$ & Dimensionslose Frequenz & $[\eta] = 1$  \\
-$k = c$ & Federkonstante & $[k] = \frac{\N}{\m}$
-\end{tabular}
-
-
 % \vfill\null
 % \columnbreak
-
-
-\subsubsection{Resonanz}
-
-Die Amplitude $A$ wird maximal, wenn der Nenner von $A(\omega)$ minimal wird 
-
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{ \omega_r = \omega_0 \sqrt{1 - 2 \, D^2} } $$
-\end{minipage}
-\hfill
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{ A_r = \frac{u_0}{2 \, D \sqrt{1 - D^2}} }$$
-\end{minipage}
 
 
 \subsubsection{Vergrösserungsfunktion / Phasenverschiebung}
@@ -543,7 +546,7 @@ $D$ & Dämpfungsgrad & $[D] = 1$
 \begin{minipage}{0.72\linewidth}
 $$ \boxed{ \text{DGL: } m \, \ddot{y} + b \, \dot{y} + c \, y = b \, \omega  \, u_0 \, \cos(\omega \, t)  } $$  
 
-$$ A(\omega) =  \frac{b \, \omega \, u_0}{\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} $$ 
+$$ A(\omega) =  \frac{b \, \omega \, u_0}{m\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} $$ 
 
 $$ \boxed{ V = \frac{2 \, D \, \eta}{\sqrt{(1- \eta^2)^2 + (2 \, D \, \eta)^2} } } $$
 
@@ -611,7 +614,7 @@ $A(\omega)$ & Amplitude der Schwingung & $[A(\omega)] = \m$
 \includegraphics[width=0.89\linewidth]{Bilder/Wellen-Optik/unwucht_gehause} \\
 \end{minipage}
 
-$$ \boxed{ \text{DGL in y-Richtung: } m \ddot{y} + b \dot{y} + c \, y = -m_R \, \omega^2 \, \sin(\omega \, t) }  $$
+$$ \boxed{ \text{DGL in y-Richtung: } m \ddot{y} + b \dot{y} + c \, y = -m_R \, \omega^2 \, e \sin(\omega \, t) }  $$
 
 Radiale Beschleunigung des Schwerpunkts des Rotors: $a_R = \omega^2 e$ \\
 
@@ -644,7 +647,6 @@ $m_R$ & Masse des Rotors & $[m_R] = \kg$ \\
 $a_R$ & Radiale Beschleinigung Schwerpunkt & $[a_R] = \frac{\m}{\s}$ \\
 $e$ & Abstand Mittelpunkt - Schwerpunkt & $[e] = \m$ \\
 $\varphi$ & Phasenverschiebung & $[ \varphi] = \rad$ \\
-$V$ & Vergrösserungsfunktion & $[V] = 1$ \\
 $\eta$ & Dimensionslose Frequenz & $[\eta] = 1$  \\
 $D$ & Dämpfungsgrad & $[D] = 1$  \\
 $A(\omega)$ & Amplitude & $[A(\omega)] = \m$ \\
@@ -654,7 +656,7 @@ $A_R$ & Resonanzamplitude & $[A_R] = \m$
 
 
 
-\subsection{Fremderregte Schwingung - Schwingkereis}
+\subsection{Fremderregte Schwingung - Schwingkreis}
 
 \begin{minipage}{0.3\linewidth}
 \includegraphics[width=\linewidth]{Bilder/Wellen-Optik/schwingkreis}  \\
@@ -667,14 +669,12 @@ $\Rightarrow$ Gleiche DGL wie bei \textcolor{blue}{Dämpfererregung} \\
 \end{minipage}
 
 
-$ \textcolor{blue}{\text{DGL: } m \ddot{y} + b \dot{y} + c \, y = b \, \omega \, u_0 \, \cos(\omega \, t) } $
-\quad
-$ \textcolor{blue}{A(\omega) =  \frac{b \, \omega \, u_0}{\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} } $ \\
+$ \textcolor{blue}{\text{DGL: } m \ddot{y} + b \dot{y} + c \, y = b \, \omega \, u_0 \, \cos(\omega \, t) }, \textcolor{blue}{A(\omega) =  \frac{b \, \omega \, u_0}{m\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} } $ \\
 
 \vspace{0.1cm}
 
 
-$ \boxed{ I(\omega) =  \frac{\omega}{\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}}U_0  \text{  mit }\omega_0 = \frac{1}{\sqrt{LC}} , \, D = \frac{R}{2}\sqrt{\frac{C}{L}}} $ 
+$ \boxed{ I(\omega) =  \frac{\omega}{L\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}}U_0, \, \omega_0 = \frac{1}{\sqrt{LC}} , \, D = \frac{R}{2}\sqrt{\frac{C}{L}}} $ 
 
 \vspace{0.1cm}
 
@@ -745,7 +745,7 @@ $$ \boxed{ Q = \frac{\omega_0}{\Delta \omega} } $$
 Breite der Resonanzkurve bei $U_0 = \frac{U_{0r}}{\sqrt{2}}$ \\
 
 
-\textbf{Breite Kurve $\Rightarrow$ tiefe Güte}
+\textbf{breite Kurve $\Rightarrow$ tiefe Güte}
 \end{minipage}
 
 
@@ -753,34 +753,34 @@ Breite der Resonanzkurve bei $U_0 = \frac{U_{0r}}{\sqrt{2}}$ \\
 \subsection{Gekoppelte Pendel}
 Zwei Pendel sind durch eine Feder miteinander verbunden. \\
 \textbf{Die Bewegung eines Pendels hat Auswirkungen auf die \\
-Bewegung des anderen Pendles.} \\
-Gesucht ist eine Berschreibung der Bewegung des Pendels. \\
+Bewegung des anderen Pendels.} \\
+Gesucht ist eine Beschreibung der Bewegung des Pendels. \\
 
 \begin{minipage}{0.3\linewidth}
-\includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/gekoppelte_pendel} 
+    \includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/gekoppelte_pendel} 
 \end{minipage}
 \hfill
 \begin{minipage}{0.66\linewidth}
-$ J_1 \ddot{\varphi_1} = -m_1 \, g \, a_1 \, \varphi_1 + c \cdot h2 \, (\varphi_2 - \varphi_1)$ \\
-$ J_2 \ddot{\varphi_2} = -m_2 \, g \,  a_2 \, \varphi_2 + c \cdot h^2 \, (\varphi_2 - \varphi_1)$ \\
+    $ J_1 \ddot{\varphi_1} = -m_1 \, g \, a_1 \, \varphi_1 + c \cdot h2 \, (\varphi_2 - \varphi_1)$ \\
+    $ J_2 \ddot{\varphi_2} = -m_2 \, g \,  a_2 \, \varphi_2 - c \cdot h^2 \, (\varphi_2 - \varphi_1)$ \\
 
-\vspace{0.2cm}
+    \vspace{0.2cm}
 
-\textbf{Spezialfall $J_1 = J_2 = J$ und $m_1 = m_2 = m$} \\
+    \textbf{Spezialfall $J_1 = J_2 = J$ und $m_1 = m_2 = m$ und $a_1 = a_2 = a$} \\
 
-$ \ddot{\varphi_1} = - \omega^2 \varphi_1 + k \, (\varphi_2 - \varphi_1)$ \\
-$ \ddot{\varphi_2} = - \omega^2 \varphi_2 - k \, (\varphi_2 - \varphi_1)$ \\
+    $ \ddot{\varphi_1} = - \omega^2 \varphi_1 + k \, (\varphi_2 - \varphi_1)$ \\
+    $ \ddot{\varphi_2} = - \omega^2 \varphi_2 - k \, (\varphi_2 - \varphi_1)$ \\
 
-\vspace{0.2cm}
-mit $\Phi_+ = \varphi_1 + \varphi_2$ \qquad $\Phi_- = \varphi_2 + \varphi_1$ \\
-
-$ \omega^2 = \frac{mg}{J}$ \qquad $k = \frac{c \cdot h}{J}$ \qquad $\omega_k = \sqrt{\omega^2 + 2 \, k}$ \\
+    \vspace{0.2cm}
+    mit $ \omega^2 = \frac{mga}{J}$ \quad $k = \frac{c \cdot h^2}{J}$ \quad $\omega_k = \sqrt{\omega^2 + 2 \, k}$ \\
+    
+    mit $\Phi_+ = \varphi_1 + \varphi_2$ \qquad $\Phi_- = \varphi_2 + \varphi_1$ \\
 \end{minipage}
 
 
-\begin{tabular}{lll}
-Symm: & $\ddot{\Phi_+} = - \omega^2 \Phi_+ $ &  $\varphi_1(t) = \varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega t} $\\
-Antisymm: & $\ddot{\Phi_-} = - (\omega^2 + 2k) \Phi_- $ & $\varphi_1(t) = -\varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega_k t} $ \\
+\begin{tabular}{llll}
+Symm: & $\ddot{\Phi_+} = - \omega^2 \Phi_+ $ & \quad &  $\varphi_1(t) = \varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega t} $\\
+Antisymm: & $\ddot{\Phi_-} = - (\omega^2 + 2k) \Phi_- $ & \quad & $\varphi_1(t) = -\varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega_k t} $ \\
 \\
 \end{tabular}
 
