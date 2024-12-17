@@ -2,13 +2,13 @@
 
 \textbf{Freie Schwingung} \\
 Wird ein schwingungsfähiges System aus dem Gleichgewichtszustand gebracht und dann sich
-selbst überlassen, so führt es freie \\
-Schwingungen oder Eigenschwingungen aus. \\
+selbst überlassen, so führt es \textit{freie \\
+Schwingungen} oder \textit{Eigenschwingungen} aus. \\
 
 
 \textbf{Erzwungene Schwingung} \\
 Wird ein System von aussen durch periodische oder auch nichtperiodische Störungen zum
-Schwingen veranlasst, wird von fremderregten Schwingungen gesprochen. \\
+Schwingen veranlasst, wird von \textit{fremderregten Schwingungen} gesprochen. \\
 
 
 
@@ -97,7 +97,7 @@ $$  \textcolor{violet}{\dot{x}(t) = \omega \cdot A \cdot \cos(\omega \, t + \var
 
 
 \begin{align*}
-E_{tot} &= E_{pot} + E_{kin} = \frac{k \cdot \textcolor{blue}{x^2} }{2} + \frac{m \cdot \textcolor{violet}{\dot{x} } }{2}   \\
+E_{tot} &= E_{pot} + E_{kin} = \frac{k \cdot \textcolor{blue}{x^2} }{2} + \frac{m \cdot \textcolor{violet}{\dot{x^2} } }{2}   \\
 &= \frac{k}{2} A^2 \cdot \sin^2(\omega \, t + \varphi) + \frac{m}{2} \omega^2  A^2 \cdot \cos^2(\omega \, t + \varphi) \\
 &= \frac{k A^2}{2} ( \sin^2(\omega \, t + \varphi) + \cos^2(\omega \, t + \varphi) )
 \end{align*}
@@ -209,7 +209,7 @@ $J$ & Trägheitsmoment & $[J] = \kg \cdot \m^2$ \\
 \end{tabular}
 
 
-\subsubsection{Torisonpendel}
+\subsubsection{Torsionspendel}
 \begin{minipage}{0.3\linewidth}
 \includegraphics[width=0.5\linewidth]{Bilder/Wellen-Optik/torsionspendel} \\
 \end{minipage}
@@ -311,7 +311,7 @@ $$ \boxed{ f(t) = A_0 + \sum\limits_{n=1}^{\infty}  A_n \, \sin(n \cdot \omega +
 
 \begin{tabular}{ll}
 $\omega_0 = \frac{2 \, \pi}{T}$ & Grundschwingung \\
-$\omega_n = n \cdot \omega_0$ & k-te Harmonische \\
+$\omega_n = n \cdot \omega_0$ & n-te Harmonische \\
 \end{tabular}
 
 
@@ -391,21 +391,30 @@ $F_R$ & Reibungskraft & $[F_R] = \N$
 
 
 \subsubsection{Gedämpfte Schwingungen - Dämpfung proportional zur Geschwindigkeit}
+$$ \boxed{\ddot{x}(t) + 2\delta \dot{x}(t) + \omega^2x(t) = 0, \quad D = \frac{\delta}{\omega}, \quad f = \frac{\Omega}{2 \, \pi}} $$
+\tiny
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|c|l|l|}\hline
+        1. Fall: & $\delta^2 - \omega^2 > 0$, D $>$ 1 & $ x(t) = A \e^{\lambda_1t} + B\e^{\lambda_2t} $ & Aperiod. Schwingung \\ 
+        & & & \\ \hline
+        2. Fall: & $\delta^2 - \omega^2 < 0$, D $<$ 1 & $ x(t) = A \e^{-\delta t} cos(\Omega t + \varphi) $ & Period. Schwingung \\
+        & & & \\\hline
+        3. Fall: & $\delta^2 - \omega^2 = 0$, D $=$ 1 & $ x(t) = (A + Bt)\e^{-\delta t} $ & Grenzfall ($\lambda = -\delta$) \\
+        & & & \\\hline
+\end{tabular}
+\normalsize
 
-\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/gedaempfte_schwingungen} \\
 
-\begin{minipage}{0.23\linewidth}
-$$ \boxed{ f = \frac{\Omega}{2 \, \pi} }$$ \\
-\end{minipage}
-\hfill
-\begin{minipage}{0.23\linewidth}
-$$ \boxed{ \Omega^2 =  \omega^2 - \Big(\frac{\kappa}{2} \Big)^2 }$$ \\
-\end{minipage}
-\hfill
+% \includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/gedaempfte_schwingungen} \\
+
 \begin{minipage}{0.5\linewidth}
-$$ \boxed{ z \cdot \Lambda = \ln \Big( \frac{A_n}{A_{n+z}} \Big) = z \cdot \frac{\kappa}{2} T }$$ \\
+    $$ \boxed{ \lambda_{1,2} = -\omega ( D \pm \sqrt{D^2 -1}) }$$ 
+    $$ \boxed{ \Omega^2 =  \omega^2 - \delta^2 }$$ 
 \end{minipage}
-
+\hfill
+\begin{minipage}{0.45\linewidth}
+    $$ \boxed{ z \cdot \Lambda = \ln \Big( \frac{A_n}{A_{n+z}} \Big) = z \cdot \delta T }$$ \\
+\end{minipage}
 
 \begin{tabular}{c l c}
 $\frac{\kappa}{2} = \delta$ & Abklingkonstante & $[\kappa = \delta] = \frac{1}{\s}$ \\
