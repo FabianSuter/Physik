@@ -1,0 +1,7 @@
+Zeile 658 geht nicht, \rm wird nicht akzeptiert
+
+Einheiten nicht angepasst
+
+medskip statt vspace
+
+\left( \right) statt \Big(

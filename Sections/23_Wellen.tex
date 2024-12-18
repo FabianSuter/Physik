@@ -514,7 +514,7 @@ $M$ & Machzahl & $[M] = 1$
 
 
 
-\subsection{Wellenwiderstand, Energietransport - Schallwellen}
+\subsection{Wellenwiderstand, Energietransport -- Schallwellen}
 
 \subsubsection{Terminologie Wellenwiderstand}
 Der \textbf{Wellenwiderstand $Z$} (auch \textbf{Impedanz} genannt) beschreibt, wie ein Medium den Fluss
@@ -738,6 +738,7 @@ $$ \xi_1(0) = \xi_2(0) \qquad \dot{\xi}_1(0) = \dot{\xi}_2(0) $$
 \hfill
 \begin{minipage}{0.48\linewidth}
 	$$ \boxed{ R = \left(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \right)^2  } $$
+	$$ \boxed{ r_{\text{Amplitudenverhältnis}} = \frac{Z_1 - Z_2}{Z_1 + Z_2}    }$$
 
 	$$ \boxed{ T = \frac{ 4 \cdot Z_1 \cdot
 	Z_2}{(Z_1 + Z_2)^2}   } $$
@@ -763,16 +764,18 @@ $Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \fr
 \end{minipage}
 \hfill
 \begin{minipage}{0.58\linewidth}
-	Reflexion an 'dichtem' Material \\
+	Reflexion an Material mit tieferer Wellenimpedanz\\
 	$\Rightarrow$ \textbf{Phasensprung} \\
+	(El. Impedanz : \(z\rightarrow 0\))\\
 
 	dicht: $n_2 > n_1$ \\
-	kleinere Wellengeschwindigkeit,\\
-	grösserer Wellenwiderstand $Z$\\
+	\textbf{kleinere} Wellengeschwindigkeit,\\
+	\textbf{grösserer} Wellenwiderstand $Z$\\
 	\vspace{0.2cm}
 
-	Reflexion an 'dünnem' Material\\
+	Reflexion an Material mit höherer Wellenimpedanz\\
 	$\Rightarrow$ \textbf{kein Phasensprung} \\
+	(El. Impedanz : \(z\rightarrow \infty \))\\
 
 \end{minipage}
 
@@ -991,7 +994,7 @@ Länge $l = \frac{\lambda}{4}$ \\
 Auslenkung offenes Ende: \\
 Wellenbauch \\
 Auslenkung gedacktes Ende:\\
-Knoten  (max. Auslenkung)
+Knoten (max. Auslenkung)
 \end{minipage}
 
 
@@ -1050,8 +1053,7 @@ Spalt, Kante, Loch (Pinhole), Objektiv-Öffnung
 
 \subsection{Beugung - Spalt}
 
-\subsubsection{Beschreibung Setup}
-\label{Beschreibung Setup}
+\subsubsection{Beschreibung Setup}\label{Beschreibung Setup}
 
 \includegraphics[width=0.7\linewidth]{Bilder/Wellen-Optik/beugung_spalt} 
 
