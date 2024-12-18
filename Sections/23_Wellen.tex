@@ -8,7 +8,7 @@ Eine Welle ist eine \textbf{Störung eines Gleichgewichtszustandes}, die sich \t
 \subsubsection{Bemerkungen zur Definition}
 
 \begin{itemize}
-
+	\itemsep0em
 	\item Voraussetzung für die \textbf{Ausbreitung} einer Welle ist die \\
 		\textbf{Kopplung} benachbarter Teilchen.	
 	\item \textbf{Eine Welle transportiert Energie (keine Materie)} 
@@ -16,7 +16,7 @@ Eine Welle ist eine \textbf{Störung eines Gleichgewichtszustandes}, die sich \t
 		\begin{itemize}
 			\item Druck in Luft
 			\item Auslenkung einer Position entlang einem Seil (Saite)
-			\item Eletrische Signale  
+			\item Elektrische Signale  
 		\end{itemize}
 \end{itemize}
 
@@ -247,7 +247,7 @@ Lösungsansatz \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.73\linewidth}
-$$ \boxed{ \xi = \xi_0 e^{j \, (\omega \, t - \vec{k} \bullet \vec{r})} }$$ \\
+$$ \boxed{ \xi = \xi_0 \e^{\jimg \, (\omega \, t - \vec{k} \bullet \vec{r})} }$$ \\
 \end{minipage}
 
 mit Wellenvektor $\vec{k} = \begin{pmatrix} k_x \\ k_y \\ k_z  \end{pmatrix}$ und Ortsvektor $ \vec{r} = \begin{pmatrix} r_x \\ r_y \\ r_z  \end{pmatrix}$
@@ -302,7 +302,7 @@ Für eine \textbf{punktförmige Quelle} und \textbf{keine Winkelabhängigkeit} g
 
 $$ \boxed{ \frac{1}{u^2} \frac{\partial^2 \xi}{\partial t^2} = \frac{2}{r} \Big( \frac{\partial \xi}{\partial r} \Big) + \frac{\partial^2 \xi}{\partial r^2} }$$
 
-$$ \boxed{  \text{mit Lösungsansatz } \xi(t, r) = \frac{1}{r} \xi_0 \, e^{j \, (\omega \, t - k \, r)} }  $$
+$$ \boxed{  \text{mit Lösungsansatz } \xi(t, r) = \frac{1}{r} \xi_0 \, \e^{\jimg \, (\omega \, t - k \, r)} }  $$
 
 % \vfill\null
 % \columnbreak
@@ -311,6 +311,7 @@ $$ \boxed{  \text{mit Lösungsansatz } \xi(t, r) = \frac{1}{r} \xi_0 \, e^{j \, 
 
 
 \subsection{Bewegte Quellen}
+%TODO: Alles zusammenfassen, sollte reichen. Commit hatte sich in den Wind geschossen
 
 \begin{minipage}{0.48\linewidth}
 \includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/Bewegte_Quellen}
@@ -327,15 +328,17 @@ $$ \boxed{ \Delta x = v_Q \cdot T }$$
 
 Die Quelle sendet eine Frequenz $f$ aus. Durch die Bewegung der Quelle ändert sich die Wellenlänge $\lambda$ und somit ergibt sich eine neue Frequenz $f'$, welche ein statischer Beobachter wahrnimmt. 
 
+Falls $v$ nicht parallel zur Beobachtungsrichtung ist, siehe \textbf{\ref{bewegte-Quelle-mit-Winkel}}
+
 \begin{align*}
 \lambda' &= \lambda -v_Q \cdot T  \\
 \lambda'&= \lambda -v_Q \frac{\lambda}{u}\\
-\lambda' &= \lambda (1 - \frac{v_Q}{u})  \\
-f'&= \frac{u}{\lambda'} = \frac{u}{\lambda(1-\frac{v_Q}{u})} = \frac{f}{(1-\frac{v_Q}{u})}
+\lambda' &= \lambda \left(1 - \frac{v_Q}{u}\right)  \\
+f'&= \frac{u}{\lambda'} = \frac{u}{\lambda\left(1-\frac{v_Q}{u}\right)} = \frac{f}{\left(1-\frac{v_Q}{u}\right)}
 \end{align*}
 
 
-$$ \boxed{f' = \frac{1}{(1 \mp \frac{v_Q}{u})}f}$$
+$$ \boxed{f' = \frac{1}{\left(1 \mp \frac{v_Q}{u}\right)}f}$$
 
 
 \begin{tabular}{ll}
@@ -375,7 +378,7 @@ Die \textbf{Veränderung der Wellenlänge} $\lambda$ der von einer \textbf{beweg
 
 
 
-\subsection{Bewegte Quelle mit Winkel}
+\subsection{Bewegte Quelle mit Winkel}\label{bewegte-Quelle-mit-Winkel}
 Die Quelle bewegt sich nicht direkt auf den Beobachter zu, sondern sie bewegt sich am \textbf{Beobachter vorbei} \\
 
 
