@@ -555,7 +555,7 @@ Schnellenamplitude & $v_0 = \omega \, \xi_0$
 
 
 
-\subsubsection{Intensität der Schallwelle}
+\subsubsection{Intensität der Schallwelle (siehe auch \ref{Pegel})}
 
 \textbf{Intensität = gemittelte Energieflussdichte} \\
 
@@ -732,14 +732,14 @@ $$ \xi_1(0) = \xi_2(0) \qquad \dot{\xi}_1(0) = \dot{\xi}_2(0) $$
 \subsubsection{Intensität von Reflexion und Transmission}
 
 \begin{minipage}{0.48\linewidth}
-\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/reflexionskoeffizient_transmissionskoeffizient} \\
+	\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/reflexionskoeffizient_transmissionskoeffizient} \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ R = \Big(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \Big)^2  } $$
+	$$ \boxed{ R = \left(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \right)^2  } $$
 
-$$ \boxed{ T = \frac{ 4 , Z_1 \cdot
- Z_2}{(Z_1 + Z_2)^2}   } $$
+	$$ \boxed{ T = \frac{ 4 \cdot Z_1 \cdot
+	Z_2}{(Z_1 + Z_2)^2}   } $$
 \end{minipage}
 
 \vspace{0.2cm}
@@ -749,7 +749,7 @@ $$ \boxed{ T = \frac{ 4 , Z_1 \cdot
 \begin{tabular}{clc}
 $R$ & Reflexionskoeffizient  & $[R] = 1$ \\
 $T$ & Transmissionskoeffizient & $[T] = 1 $ \\
-$Z_i$ & Wellenwiderstand im Medium $i$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
+$Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
 \end{tabular}
 \renewcommand{\arraystretch}{1}
 
@@ -758,20 +758,20 @@ $Z_i$ & Wellenwiderstand im Medium $i$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \fr
 \subsubsection{Phasensprünge bei Reflexionen}
 
 \begin{minipage}{0.4\linewidth}
-\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/reflexion_phasensprung} \\
+	\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/reflexion_phasensprung} \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.58\linewidth}
-Reflexion an 'dichtem' Material \\
-$\Rightarrow$ \textbf{Phasensprung} \\
+	Reflexion an 'dichtem' Material \\
+	$\Rightarrow$ \textbf{Phasensprung} \\
 
-dicht: $n_2 > n_1$ \\
-kleinere Wellengeschwindigkeit,\\
- grösserer Wellenwiderstand \\
-\vspace{0.2cm}
+	dicht: $n_2 > n_1$ \\
+	kleinere Wellengeschwindigkeit,\\
+	grösserer Wellenwiderstand $Z$\\
+	\vspace{0.2cm}
 
-Reflexion an 'dünnem' Material\\
-$\Rightarrow$ \textbf{kein Phasensprung} \\
+	Reflexion an 'dünnem' Material\\
+	$\Rightarrow$ \textbf{kein Phasensprung} \\
 
 \end{minipage}
 
@@ -783,52 +783,52 @@ $\Rightarrow$ \textbf{kein Phasensprung} \\
 \subsubsection{Elektromagnetische Wellem in Doppelleiter}
 
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ U_r = \frac{Z_2 - Z_1}{Z_1 + Z_2} \, U_h } $$
+$$ \boxed{ u_r = \frac{Z_2 - Z_1}{Z_1 + Z_2} \, u_h } $$
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ U_t = \frac{2 \, Z_2}{Z_1 + Z_2} \, U_h } $$
+$$ \boxed{ u_t = \frac{2 \, Z_2}{Z_1 + Z_2} \, u_h } $$
 \end{minipage}
 
 
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ I_r = \frac{Z_2 - Z_1}{Z_1 + Z_2} \, I_h } $$ \\
+$$ \boxed{ i_r = -\frac{Z_2 - Z_1}{Z_1 + Z_2} \, i_h } $$ \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ I_t = \frac{2 \, Z_1}{Z_1 + Z_2} \, I_h } $$ \\
+$$ \boxed{ i_t = \frac{2 \, Z_1}{Z_1 + Z_2} \, i_h } $$ \\
 \end{minipage}
 
 \textbf{Kabel mit kurzgeschlossenem Ende $\boldsymbol{Z_2 = 0}$} \\
 \vspace{0.2cm}
 \begin{minipage}{0.3\linewidth}
-$$ U_r = - U_h $$ \\
+$$ u_r = - u_h $$ \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.68\linewidth}
-$$ U_1 = U_h + U_r  = U_h - U_h = 0 $$ \\
+$$ u_1 = u_h + u_r  = u_h - u_h = 0 $$ \\
 \end{minipage}
 
 
 \textbf{Kabel mit offenem Ende $\boldsymbol{Z_2 = \infty}$} \\
 \vspace{0.2cm}
 \begin{minipage}{0.3\linewidth}
-$$ I_r = - I_h $$ 
+$$ i_r = - i_h $$ 
 \end{minipage}
 \hfill
 \begin{minipage}{0.68\linewidth}
-$$ I_1 = I_r + I_h  = I_r - I_r = 0 $$  
+$$ i_1 = i_r + i_h  = i_r - i_r = 0 $$  
 \end{minipage}
 
 \vspace{0.2cm}
 
 \renewcommand{\arraystretch}{1.1}
 \begin{tabular}{clc}
-$U_r$ & Reflektierte Spannung & $[U_r] = \V$ \\
-$U_h$ & Eintreffende Spannung & $[U_h] = \V$ \\
-$I_r$ & Reflektierter Strom & $[I_r] = \A$ \\
-$I_h$ & Eintreffender Strom & $[I_h] = \A$ \\
-$Z_i$ & Wellenwiderstand im Medium $i$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
+$u_r$ & Reflektierte Spannung & $[u_r] = \V$ \\
+$u_h$ & Eintreffende Spannung & $[u_h] = \V$ \\
+$i_r$ & Reflektierter Strom & $[i_r] = \A$ \\
+$i_h$ & Eintreffender Strom & $[i_h] = \A$ \\
+$Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
 \end{tabular}
 \renewcommand{\arraystretch}{1}
 
@@ -845,16 +845,16 @@ $$ \boxed{ R = \Big(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \Big)^2 =  \Big(  \frac{n_1 -
 \renewcommand{\arraystretch}{1.1}
 \begin{tabular}{clc}
 $R$ & Reflexionskoeffizient  & $[R] = 1$ \\
-$Z_i$ & Wellenwiderstand im Medium $i$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
+$Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
 $\mu_r$ & Permeabilitätszahl & $[\mu_r] = 1$ \\
 $\varepsilon$ & Dielektizitätszahl & $[\varepsilon_r] = 1$ \\
-$n_i$ & Brechungsindex von Medium $i$ & $[n_1] = 1$ \\
+$n_n$ & Brechungsindex von Medium $n$ & $[n_1] = 1$ \\
 \end{tabular}
 
 
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{ll}
-$\varepsilon_0$ & Ele. Feldkonstante $\varepsilon_0 = 8.854 \cdot 10^{-12} \, \frac{\A \, \s}{\V \, \m}$ \\
+$\varepsilon_0$ & El. Feldkonstante $\varepsilon_0 = 8.854 \cdot 10^{-12} \, \frac{\A \, \s}{\V \, \m}$ \\
 $\mu_0$ & Magn. Feldkonstante $\mu_0 = 4 \pi \cdot 10^{-7} \frac{\N}{\A^2}$\\
 $Z_0$ & Wellenwiderstand Vakuum $Z_0 \approx 376.73 \, \Ohm$ \\
 $c$ & Lichtgeschwindigkeit $c = 300 \cdot 10^6 \, \mathrm{\frac{m}{s}}$ \\ 
@@ -1208,7 +1208,7 @@ Beugungsbilder
 
 \section{Akustik}
 
-\subsubsection{Teminologie}
+\subsubsection{Terminologie}
 
 \textbf{Ton}\\
 Eine harmonische Schallwelle wird als \textbf{Ton} bezeichnet. \\
@@ -1231,7 +1231,7 @@ bestimmten Frequenzbereich eine  \textbf{kontinuierliche Verteilung} auf. \\
 
 
 
-\subsection{Pegel}
+\subsection{Pegel}\label{Pegel}
 
 \begin{minipage}{0.48\linewidth}
 \center{\textbf{'Einheit': Bel}} 
