@@ -311,39 +311,60 @@ $$ \boxed{  \text{mit Lösungsansatz } \xi(t, r) = \frac{1}{r} \xi_0 \, \e^{\jim
 
 
 \subsection{Bewegte Quellen}
-%TODO: Alles zusammenfassen, sollte reichen. Commit hatte sich in den Wind geschossen
+
+	\begin{minipage}{0.48\linewidth}
+		\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/Bewegte_Quellen}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		Die Quelle bewegt sich mit der \textcolor{blue}{Geschwindigkeit $v_Q$} in \\ eingezeichneter Richtung fort\\
+
+		Die Quelle verschiebt sich in der Zeit $T$ um 
+		$$ \boxed{ \Delta x = v_Q \cdot T }$$
+	\end{minipage}
+
+\subsubsection{Doppler Effekt}
+	Die \textbf{Veränderung der Wellenlänge} $\lambda$ der von einer \textbf{bewegten Quelle} ausgesandten Wellen ist als \textbf{Doppler Effekt} bekannt.  \\
+
+	\includegraphics[width=0.8\linewidth]{Bilder/Wellen-Optik/Doppler_effekt}
+
+\subsubsection{Bewegte Quelle vs. unbewegte Quelle}
+
+	\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/Unbewegte_Quelle}
+
+\subsection{Frequenzverschiebung durch Bewegung}
+
+	Die Quelle sendet eine Frequenz $f$ aus. Durch die Bewegung der Quelle ändert sich die Wellenlänge $\lambda$ und somit ergibt sich eine neue Frequenz $f'$, welche ein statischer Beobachter wahrnimmt. 
+
+	Falls $v$ nicht parallel zur Beobachtungsrichtung ist, siehe \textbf{\ref{bewegte-Quelle-mit-Winkel}}
+
+\begin{align*}
+\lambda' &= \lambda -v_{Q_{||}} \cdot T  \\
+\lambda'&= \lambda -v_{Q_{||}} \frac{\lambda}{u}\\
+\lambda' &= \lambda \left(1 - \frac{v_{Q_{||}}}{u}\right)  \\
+f'&= \frac{u}{\lambda'} = \frac{u}{\lambda\left(1-\frac{v_{Q_{||}}}{u}\right)} = \frac{f}{\left(1-\frac{v_{Q_{||}}}{u}\right)}
+\end{align*}
+
+\subsection{Bewegte Quelle oder bewegter Beobachter}
 
 \begin{minipage}{0.48\linewidth}
-\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/Bewegte_Quellen}
+	\begin{center}
+		Bewegte Quelle:
+		$$ \boxed{f' = \frac{1}{\left(1 \mp \frac{v_{Q_{||}}}{u}\right)}f}$$
+	\end{center}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-Die Quelle bewegt sich mit der \textcolor{blue}{Geschwindigkeit $v_Q$} in \\ eingezeichneter Richtung fort\\
-
-Die Quelle verschiebt sich in der Zeit $T$ um 
-$$ \boxed{ \Delta x = v_Q \cdot T }$$
+	\begin{center}
+		Bewegter Beobachter:
+		$$ \boxed{f' = \left( 1 \pm \frac{v_{B_{||}}}{u}  \right) \, f }$$\\
+	\end{center}
 \end{minipage}
-
-\subsubsection{Frequenzverschiebung durch Bewegung der Quelle}
-
-Die Quelle sendet eine Frequenz $f$ aus. Durch die Bewegung der Quelle ändert sich die Wellenlänge $\lambda$ und somit ergibt sich eine neue Frequenz $f'$, welche ein statischer Beobachter wahrnimmt. 
-
-Falls $v$ nicht parallel zur Beobachtungsrichtung ist, siehe \textbf{\ref{bewegte-Quelle-mit-Winkel}}
-
-\begin{align*}
-\lambda' &= \lambda -v_Q \cdot T  \\
-\lambda'&= \lambda -v_Q \frac{\lambda}{u}\\
-\lambda' &= \lambda \left(1 - \frac{v_Q}{u}\right)  \\
-f'&= \frac{u}{\lambda'} = \frac{u}{\lambda\left(1-\frac{v_Q}{u}\right)} = \frac{f}{\left(1-\frac{v_Q}{u}\right)}
-\end{align*}
-
-
-$$ \boxed{f' = \frac{1}{\left(1 \mp \frac{v_Q}{u}\right)}f}$$
 
 
 \begin{tabular}{ll}
-+ & Quelle bewegt sich vom Beobachter weg \\
-- & Quelle bewegt sich zum Beobachter hin\\
++ & Quelle bewegt sich weg / Beobachter bewegt sich hin\\
+- & Quelle bewegt sich hin / Beobachter bewegt sich weg\\
 \\
 \end{tabular}
 
@@ -351,7 +372,8 @@ $$ \boxed{f' = \frac{1}{\left(1 \mp \frac{v_Q}{u}\right)}f}$$
 \begin{tabular}{clc}
 $\lambda$ & Wellenlänge der aussendeten Welle & $[\lambda] = \m$ \\
 $\lambda'$ & Wellenlänge der wahrgenommenen Welle & $[\lambda'] = \m$ \\
-$v_Q$ & Geschwindigkeit der bewegten Quelle & $[v_Q] = \frac{\m}{\s}$ \\
+$v_{Q_{||}}$ & Geschwindigkeit der bewegten Quelle & $[v_{Q_{||}}] = \frac{\m}{\s}$ \\
+$v_{B_{||}}$ & Geschwindigkeit des bewegten Beobachters & $[v_{Q_{||}}] = \frac{\m}{\s}$ \\
 $u$ & Wellengeschwindigkeit & $[u] = \frac{\m}{\s}$ \\
 $f$ & Frequenz der ausgesendeten Wellen & $[f] = \Hz$ \\
 $f'$ & Frequenz der wahrgenommenen Wellen & $[f'] = \Hz$ \\
@@ -360,21 +382,6 @@ $T$ & Periodendauer (Dauer der Ausbreitung) & $[T] = \s$ \\
 
 
 
-% \vfill\null
-% \columnbreak
-
-\subsubsection{Bewegte Quelle vs. unbewegte Quelle}
-
-\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/Unbewegte_Quelle}
-
-
-
-
-
-\subsection{Doppler Effekt}
-Die \textbf{Veränderung der Wellenlänge} $\lambda$ der von einer \textbf{bewegten Quelle} ausgesandten Wellen ist als \textbf{Doppler Effekt} bekannt.  \\
-
-\includegraphics[width=0.8\linewidth]{Bilder/Wellen-Optik/Doppler_effekt}
 
 
 
@@ -429,37 +436,6 @@ $\cos^2(\theta) = \frac{1}{1 + \frac{d^2}{l^2}}$ \\
 $\boxed{ \Rightarrow \frac{f'}{f} = \frac{1}{1 - \frac{v_Q}{u} \cdot \sqrt{\frac{l^2}{l^2 + d^2} } } } $
 
 \end{minipage}
-
-
-
-
-\subsection{Bewegter Beobachter}
-
-\begin{minipage}{0.48\linewidth}
-\includegraphics[width=0.98\linewidth]{Bilder/Wellen-Optik/bewegter_beobachter} \\
-\end{minipage}
-\hfill
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{f' = \Big( 1 \pm \frac{v_B}{u}  \Big) \, f }$$\\
-\end{minipage}
-
-
-
-
-\begin{tabular}{ll}
-+ & Beobachter geht auf Quelle zu \\
-- & Beobachter geht von Quelle weg\\
-\\
-\end{tabular}
-
-
-\begin{tabular}{clc}
-$v_B$ & Geschwindigkeit des bewegten Beobachters & $[v_B] = \frac{\m}{\s}$ \\
-$v_Q$ & Geschwindigkeit der bewegten Quelle & $[v_Q] = \frac{\m}{\s}$ \\
-$u$ & Wellengeschwindigkeit & $[u] = \frac{\m}{\s}$ \\
-$f_B$ & Frequenz, welche Beobachter wahrnimmt & $[f_B] = \Hz$ \\
-$f_Q$ & Frequenz, welche Quelle 'aussendet' & $[f_Q] = \Hz$ 
-\end{tabular}
 
 
 
