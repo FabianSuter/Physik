@@ -669,9 +669,9 @@ $$ \xi_1 = A \cdot \sin(\omega_1 \, t) $$
 $$ \xi_2 = A \cdot \sin(\omega_2 \, t) $$
 \end{minipage}
 
-$$ \boxed{ \xi = 2 \, A \cdot \sin( \overline{\omega} \, t) \cdot \cos( \Omega \, t) }$$
+$$ \boxed{ \xi = 2 \, A \cdot \sin( \overline{\omega} \, t) \cdot \cos( \Ohm \, t) }$$
 
-mit $\overline{\omega} = \frac{\omega_1 + \omega_2}{2}$ und  $\Omega = \frac{\omega_2 - \omega_1}{2}$
+mit $\overline{\omega} = \frac{\omega_1 + \omega_2}{2}$ und  $\Ohm = \frac{\omega_2 - \omega_1}{2}$
 
 
 
@@ -1306,7 +1306,7 @@ Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} }$ \\
 
 Verhältnis & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} }$ \\
 
-Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \Big( \frac{r_2}{r_1} \Big)}$ \\
+Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right)}$ \\
 \end{tabular}
 % \renewcommand{\arraystretch}{1}
 
@@ -1316,13 +1316,13 @@ Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \Big( \frac{r_2}{r_1} \Big)}$ \\
 $I(r)$ & Intensität & $[I(r)] = \frac{\W}{\m^2}$ \\
 $P$ & Leistung & $[P] = \W$ \\
 $r_i$ & Abstand (Radius) zum Wellenursprung & $[r_i] = \m^2$\\
-$L_i$ & Pegel & $[P_i] = \dB$ 
+$L_i$ & Pegel & $[L_i] = \dB$ 
 \end{tabular}
 
 
 
 \subsection{PHON-Skala}
-\includegraphics[width=0.75\linewidth]{Bilder/Wellen-Optik/phon_skala}
+\includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/phon_skala}
 
 
 
@@ -1340,6 +1340,7 @@ durchdrungene Medium oder die das Schallfeld begrenzenden Körper
 \textbf{Verschiedene Arten von Absorption für Schalldämpfung Innen} \\
 
 \begin{itemize}
+	\itemsep0em
 	\item Poröse Schicht (mit oder ohne perforierte Abdeckung) 
 	\item Akustikplatte 
 	\item Plattenresonator
@@ -1366,11 +1367,11 @@ Schalldämmung für die dahinterliegenden Gebäude erreicht.
 
 \renewcommand{\arraystretch}{2.7}
 \begin{tabular}{ll}
-Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} \, e^{- \alpha r}}$ \\
+Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} \, \e^{- \alpha r}}$ \\
 
-Verhältnis & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} \, e^{- \alpha (r_2 - r_1)} }$ \\
+Verhältnis & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} \, \e^{- \alpha (r_2 - r_1)} }$ \\
 
-Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \Big( \frac{r_2}{r_1} \Big) - K (r_2 - r_1)  }$ \\
+Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right) - K (r_2 - r_1)  }$ \\
 \end{tabular}
 \renewcommand{\arraystretch}{1}
 
@@ -1382,7 +1383,7 @@ Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \Big( \frac{r_2}{r_1} \Big) - K (r_2 
 $I(r)$ & Intensität & $[I(r)] = \frac{\W}{\m^2}$ \\
 $P$ & Leistung & $[P] = \W$ \\
 $r_i$ & Abstand (Radius) zum Wellenursprung & $[r_i] = \m^2$\\
-$L_i$ & Pegel & $[P_i] = \dB$ \\
+$L_i$ & Pegel & $[L_i] = \dB$ \\
 $\alpha$ & Dämpfung & $[\alpha] = 1$ \\
 $K$ & Dämpfung & $[K] = \frac{\dB}{\m}$
 \end{tabular}
@@ -1417,7 +1418,7 @@ Beispiele: Trittschall, Wasserleitungsgeräusche \\
 
 \subsection{Schalldämm-Mass}
 
-$$ \boxed{ \mathcal{R} = 10 \cdot \Big( \frac{P_1}{P_2} \Big)  } $$
+$$ \boxed{ \mathcal{R} = 10 \cdot \log\left( \frac{P_1}{P_2} \right)  } $$
 
 
 
