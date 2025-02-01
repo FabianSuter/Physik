@@ -1,136 +1,98 @@
-\documentclass[8pt, a4paper, fleqn, landscape]{scrartcl}
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
-\usepackage{ulem}
-
-\usepackage{hyperref}
-\hypersetup{pdfborder = {0 0 0}}%No borders around Hyperlinks
-
-%Layout
-\usepackage{multicol, geometry, xcolor}
-\geometry{margin=1cm}
-\parindent 0pt
-\pagestyle{empty}
-
-\newlength{\breite}
-\setlength{\breite}{0.5pt}
-\setlength{\columnseprule}{\breite}
-
-\usepackage{graphicx}
-
-\usepackage{tikz}
-\usepackage{scalerel} %maybe not needed
-
-\usepackage{lastpage, fancyhdr}
-
-\usepackage{tabularx}
-\usepackage{multirow}
 
 
-
-%Mathematik-Pakete
-\usepackage{amsmath, amstext, amssymb, mathtools, esint, polynom}
-\usepackage{bm}
-\allowdisplaybreaks %Seitenumbruch in align-Umgebung erlauben
-
-
-% Farbe der Boxen für Titel / Untertitel
-\definecolor{section}{RGB}{79,148,205}
-\definecolor{subsection}{RGB}{135,206,250}
-\definecolor{titletext}{RGB}{0,0,0}
-
-
-% section color box
-\setkomafont{section}{\mysection}
-\newcommand{\mysection}[1]{%
-	\Large\sffamily
-	\setlength{\fboxsep}{0cm}%already boxed
-	\colorbox{section}{%
-		\begin{minipage}{\linewidth}%
-			\vspace*{2pt}%Space before
-			\leftskip2pt %Space left
-			\rightskip\leftskip %Space right
-			{\color{titletext} #1}
-			\vspace*{1pt}%Space after
-		\end{minipage}%
-}}
-% subsection color box
-\setkomafont{subsection}{\mysubsection}
-\newcommand{\mysubsection}[1]{%
-	\Large\sffamily
-	\setlength{\fboxsep}{0cm}%already boxed
-	\colorbox{subsection}{%
-		\begin{minipage}{\linewidth}%
-			\vspace*{2pt}%Space before
-			\leftskip2pt %Space left
-			\rightskip\leftskip %Space right
-			{\color{titletext} #1}
-			\vspace*{1pt}%Space after
-		\end{minipage}%
-}}
-
-%Added from Optik Physik 3
-%\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0pt} % Funktioniert nicht :(
-
-
-\newcommand{\m}{\mathrm{m}} 
-\newcommand{\Hz}{\mathrm{Hz}}
-\newcommand{\s}{\mathrm{s}}
-\newcommand{\N}{\mathrm{N}}
-\newcommand{\kg}{\mathrm{kg}}
-\newcommand{\J}{\mathrm{J}}
-\newcommand{\rad}{\mathrm{rad}}				
-\newcommand{\A}{\mathrm{A}}
-\newcommand{\V}{\mathrm{V}}							
-\newcommand{\Pa}{\mathrm{Pa}}	
-\newcommand{\mol}{\mathrm{mol}}		
-\newcommand{\Ohm}{\mathrm{\Omega}}	
-\newcommand{\W}{\mathrm{W}}	
-\newcommand{\dB}{\mathrm{dB}}
-\newcommand{\const}{\mathrm{const}} 
-\newcommand{\e}{\mathrm{e}}
-\newcommand{\jimg}{\ensuremath{\mathrm{j}}}                     % custom command for imaginary unit, j
-
-
-%Header & footer
-\pagestyle{fancy}
-\fancyhf{}
-\setlength{\footskip}{0.5cm}
-\fancyfoot[L]{\thepage{} / \pageref{LastPage}}
-\fancyfoot[R]{Physik}
-\renewcommand{\footrulewidth}{0pt}
-\renewcommand{\headrulewidth}{0pt}
 
 				
-\providecommand{\diff}{\mathop{} \! \mathrm{d}}
 
 
 
 
-%Informationen für den Befehl maketitle
-\title{Physik}
-\subtitle{Zusammenfassung an der OST}
-\author{Fabian Suter, \today}
-\date{{\small \url{https://github.com/FabianSuter/Physik.git}}}
+
+% %Informationen für den Befehl maketitle
+% \title{Physik}
+% \subtitle{Zusammenfassung an der OST}
+% \author{Fabian Suter, \today}
+% \date{{\small \url{https://github.com/FabianSuter/Physik.git}}}
  
-\begin{document}
+% \begin{document}
 
-	\begin{multicols*}{3}
-		\maketitle
+% 	\begin{multicols*}{3}
+% 		\maketitle
 	 
-		% TODO: bei Gelegenheit alle Einheitenlisten mit \rule{0pt}{10pt} o.ä. überprüfen (passt die Zeilenhöhe an)
+% 		% TODO: bei Gelegenheit alle Einheitenlisten mit \rule{0pt}{10pt} o.ä. überprüfen (passt die Zeilenhöhe an)
 
-		\thispagestyle{fancy}%Pagenumber for first page
+% 		\thispagestyle{fancy}%Pagenumber for first page
 
-		% \input{Sections/01_Statik.tex}
+% 		% \input{Sections/01_Statik.tex}
 
-		% \input{Sections/02_Kinematik.tex}
+% 		% \input{Sections/02_Kinematik.tex}
 
-		% \input{Sections/03_Dynamik.tex}
+% 		% \input{Sections/03_Dynamik.tex}
 
-		% \input{Sections/11_Fluiddynamik.tex}
+% 		% \input{Sections/11_Fluiddynamik.tex}
 
-		% \input{Sections/12_Thermodynamik.tex}
+% 		% \input{Sections/12_Thermodynamik.tex}
+		
+% 		\input{Sections/21_Optik.tex}
+		
+% 		\input{Sections/22_Schwingungen.tex}
+		
+% 		\input{Sections/23_Wellen.tex}
+		
+% 		% \input{Sections/13_Anhang.tex}
+% 		\input{Sections/99_Anhang_3.tex}
+
+% 		% \input{Sections/M1_Vektorrechnung.tex}
+
+% 		% \input{Sections/M2_Statistik.tex}
+
+% 		% \input{Sections/M3_Mathematik-Hilfe.tex}
+		
+% 	\end{multicols*}	
+% \end{document}
+
+% ========================================= TEMPLATE INFO ========================================
+%
+% Author:       Fabian Suter (Template from P4ntomime)
+% Version:      1.0.1
+% Last updated: 2025-02-01
+% Brief:        Physics summary of Physic I, II and III at OST Rapperswil
+% 
+% ================================================================================================
+\documentclass[8pt, a4paper, twoside]{extarticle}
+% Font size:    8pt
+% Paper size:   A4
+% style:        twoside (needed, so odd and even pages have different margins)
+% orientation:  portrait. (use 'landscape' for landscape orientation)
+
+
+% ========================================= DOCUMENT INFO =========================================
+\def\title{Physik I, II und III}           					% title
+\def\shorttitle{Ph OST} 									% short title (displayed as PDF title)
+\def\dozent{Dr. Christoph Wetli, Gregor Dudle}         		% lecturer
+\def\semester{2023 - 2024} 									% semester
+\def\author{Fabian Suter}  				      				% author(s)
+\def\repo{https://github.com/FabianSuter/Physik.git}        % repository link
+\def\version{1.0.1}   										% version
+\def\pagelimit{50}           								% page limit -> causes pages after limit to be red
+\def\titleoption{normal}   									% options: compact, normal
+\def\enableToC{true}
+
+% ================================= PACKAGES, SETUP AND COMMANDS ==================================
+\input{preamble.tex}
+
+
+% =========================================== DOCUMENT ============================================
+\begin{document}
+    \begin{layout}
+		\input{Sections/01_Statik.tex}
+
+		\input{Sections/02_Kinematik.tex}
+
+		\input{Sections/03_Dynamik.tex}
+
+		\input{Sections/11_Fluiddynamik.tex}
+
+		\input{Sections/12_Thermodynamik.tex}
 		
 		\input{Sections/21_Optik.tex}
 		
@@ -138,14 +100,13 @@
 		
 		\input{Sections/23_Wellen.tex}
 		
-		% \input{Sections/13_Anhang.tex}
+		\input{Sections/13_Anhang.tex}
 		\input{Sections/99_Anhang_3.tex}
 
-		% \input{Sections/M1_Vektorrechnung.tex}
+		\input{Sections/M1_Vektorrechnung.tex}
 
-		% \input{Sections/M2_Statistik.tex}
+		\input{Sections/M2_Statistik.tex}
 
-		% \input{Sections/M3_Mathematik-Hilfe.tex}
-		
-	\end{multicols*}	
+		\input{Sections/M3_Mathematik-Hilfe.tex}
+    \end{layout}
 \end{document}
