@@ -578,13 +578,13 @@
 		\subsubsection{Dynamisches Grundgesetz der Rotation}
 			Es ist \textbf{nur die tangentiale Komponente} der Kraft \\
 			(des Drehmoments) eines rotierenden Körpers relevant! \\
-				
+			\vspace{-0.2cm}
 			$$dM_t = r \cdot dF_t = r \cdot dm \cdot a_t = dm \cdot r^2 \cdot \alpha$$ \\
-			
+			\vspace{-0.2cm}
 			$$ \boxed{ M = \int dM = \int r^2 \, \alpha \cdot dm = \alpha  \underbrace{  \int r^2 \cdot dm }_{\substack{J_{Scheibe} = m \cdot r^2}} }$$ \
-			
+			\vspace{-0.2cm}
 			$$ \boxed{ \Rightarrow \; M = J \cdot \alpha = r \cdot F} $$ \\
-				
+			\vspace{-0.2cm}
 			\begin{tabular}{c l c}
 				$dM_t$ & kleine Tan.-Komponente des Drehmoments & $[dM_t] = \mathrm{Nm}$ \\
 				$M$ & (gesamtes) Drehmoment & $[M] = \mathrm{Nm}$ \\
@@ -596,11 +596,40 @@
 				$J$ & (Massen-) Trägheitsmoment & $[J] = \mathrm{kg \, m^2}$ \\
 			\end{tabular}
 
-		\subsubsection{Massenträgheitsmomente} %TODO: Irgendwann mal Bilder gegen ganze Tabelle tauschen
-		
-			\includegraphics[width=0.8\linewidth]{Bilder/massentraegheitsmomente}
-
-			Ring: $m \cdot r^2$
+		\subsubsection{Massenträgheitsmomente}\label{Massenträgheitsmomente}
+			\begin{tabular}{|c|c|c|} \hline
+				\multicolumn{2}{|l|}{\textbf{Körper}} & \textbf{Trägheitsmoment} \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/massentraegheitsmomente-vollz.png}} & \\
+				Vollzylinder / & & \\
+				& & $ \frac{m r^2}{2} $\\
+				Scheibe & & \\
+				& & \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/massentraegheitsmomente-hohlz.png}} & \\
+				& & \\
+				Hohlzylinder & & $ \frac{m (r^2_a  + r^2_i)}{2} $\\
+				& & \\
+				& & \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/massentraegheitsmomente-kugel.png}} & \\
+				& & \\
+				Kugel & & $ \frac{2}{5} m r^2 $\\
+				& & \\
+				& & \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/massentraegheitsmomente-quader.png}} & \\
+				& & \\
+				Quader & & $ \frac{m (a^2  + b^2)}{12} $\\
+				& & \\
+				& & \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/J_massepunkt.png}} & \\
+				& & \\
+				Massenpunkt & & $ m r^2 $\\
+				& & \\
+				& & \\ \hline
+				& \multirow{5}{8em}{\includegraphics[width=\linewidth]{Bilder/Wellen-Optik/J_duenner_stab_mitte.png}} & \\
+				& & \\
+				Dünner Stab & & $ \frac{1}{12}ml^2 $\\
+				& & \\
+				& & \\ \hline
+			\end{tabular}
 
 	\subsection{Trägheitsellipsoid}
 		Trägheitsradius $r_0$: als ob ganze Masse eines Körpers nur einen \\
