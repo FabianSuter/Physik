@@ -517,7 +517,7 @@ $\varphi$ & Phasenverschiebung & $[\varphi] = \rad$
 \subsubsection{Vergrösserungsfunktion / Phasenverschiebung}
 
 \begin{tabular}{c c}
-$ \boxed{ V = \frac{1}{\sqrt{(1- \eta^2)^2 + (2 \, D \, \eta)^2} } } $ & $ \boxed{ \varphi = \arctan \Big( \frac{2 D \eta}{1 - \eta^2}  \Big) } $ \\
+$ \boxed{ V = \frac{1}{\sqrt{(1- \eta^2)^2 + (2 \, D \, \eta)^2} } } $ & $ \boxed{ \varphi = \arctan \left( \frac{2 D \eta}{1 - \eta^2}  \right) } $ \\
 \\
 $ \boxed{ V_r = \frac{1}{\sqrt{ 1 - \eta_r^4} } \quad \text{mit } \eta_r = \sqrt{1 - 2 \, D^2}  } $ \\
 \\
@@ -527,7 +527,7 @@ $ \boxed{ V_r = \frac{1}{\sqrt{ 1 - \eta_r^4} } \quad \text{mit } \eta_r = \sqrt
 \begin{tabular}{c l c}
 $\varphi$ & Phasenverschiebung & $[ \varphi] = \rad$ \\
 $V$ & Vergrösserungsfunktion & $[V] = 1$ \\
-$V_r$ & Vergrösserungsfunktion & $[V_r] = 1$ \\
+$V_r$ & Vergrösserungsfunktion bei Resonanz & $[V_r] = 1$ \\
 $\eta$ & Dimensionslose Frequenz & $[\eta] = 1$  \\
 $D$ & Dämpfungsgrad & $[D] = 1$ 
 \end{tabular}
@@ -549,7 +549,7 @@ $$ A(\omega) =  \frac{b \, \omega \, u_0}{m\sqrt{(\omega_0^2 -\omega^2)^2 + (2D 
 
 $$ \boxed{ V = \frac{2 \, D \, \eta}{\sqrt{(1- \eta^2)^2 + (2 \, D \, \eta)^2} } } $$
 
-$$ \boxed{ \varphi = \arctan \Big( \frac{2 D \eta}{1 - \eta^2} \Big) - \frac{\pi}{2} } $$ 
+$$ \boxed{ \varphi = \arctan \left( \frac{2 D \eta}{1 - \eta^2} \right) - \frac{\pi}{2} } $$ 
 
 
 \end{minipage}
@@ -585,7 +585,7 @@ $$ \boxed{ V = \frac{\eta^2}{\sqrt{(1- \eta^2)^2 + (2 \, D \, \eta)^2} } } $$
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ \varphi = \arctan \Big( \frac{2 D \eta}{1 - \eta^2} \Big) - \pi } $$ 
+$$ \boxed{ \varphi = \arctan \left( \frac{2 D \eta}{1 - \eta^2} \right) - \pi } $$ 
 \end{minipage}
 
 \vspace{0.2cm}
@@ -619,10 +619,7 @@ Radiale Beschleunigung des Schwerpunkts des Rotors: $a_R = \omega^2 e$ \\
 
 Kraft des Rotors auf die Maschine: $\boxed{ F_U = m_R \cdot a_R = m_R \cdot \omega^2 e } $ 
 
-$$ A(\omega) = \frac{m_R}{m} \frac{e \, \omega^2}{\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}}  $$ 
-
-
-$$ A_R = \frac{m_R}{m} \frac{e}{2D \sqrt{1 - D^2}}  $$
+$$ A(\omega) = \frac{m_R}{m} \frac{e \, \omega^2}{\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}}  \qquad A_R = \frac{m_R}{m} \frac{e}{2D \sqrt{1 - D^2}}  $$
 
 
 % \vfill\null
@@ -632,7 +629,7 @@ $$ A_R = \frac{m_R}{m} \frac{e}{2D \sqrt{1 - D^2}}  $$
 \subsubsection{Kraft auf die Basis des Gehäuses} 
 
 \begin{minipage}{0.48\linewidth}
-$$ F_B = c y + b \dot{y} = F_{B0} \sin(\omega t - \varphi + \psi) $$ 
+$$ F_B = c y + b \dot{y} = F_{B0} \sin(\omega t - \varphi + \psi) , \qquad \varphi = \psi - \pi $$ 
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
@@ -677,7 +674,7 @@ $ \boxed{ I(\omega) =  \frac{\omega}{L\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omeg
 
 \vspace{0.1cm}
 
-$$ \boxed{ V = \frac{U_{L0}}{U_0} = \frac{\eta^2}{\sqrt{(1 - \eta^2)^2 + (2 \, D \, \eta)^2}} }$$
+$$ \boxed{ V = \frac{U_{L0}}{U_0} = \frac{\eta^2}{\sqrt{(1 - \eta^2)^2 + (2 \, D \, \eta)^2}} } \qquad \boxed{ \varphi = \arctan \left( \frac{2 D \eta}{1 - \eta^2} \right) - \pi } $$ 
 
 
 
@@ -701,6 +698,7 @@ $$ \boxed{ I_{0r} = \frac{U_0}{R} } $$
 \rule{0pt}{10pt} $\omega_0$ & Kreisfrequenz ungedämpfte Schwingung & $[\omega_0] = \frac{\rad}{\s}$ \\
 \rule{0pt}{10pt} $\omega$ & Kreisfrequenz der Störung (Erreger) & $[\omega] = \frac{\rad}{\s}$ \\
 \rule{0pt}{10pt} $\omega_r$ & Resonanzfrequenz & $[\omega_r] = \frac{\rad}{\s}$ \\
+$\varphi$ & Phasenverschiebung & $[ \varphi] = \rad$ \\
 $I_{0r}$ & Strom-Amplitude @ Resonanz & $[I_{0r}] = \A$ \\
 $U_0$ & Amplitude der Erregerspannung & $[U_0] = \V$ \\
 $U_{L0}$ & Amplitude Spulenspannung & $[U_{L0}] = \V$ \\
@@ -790,10 +788,11 @@ Antisymm: & $\ddot{\Phi_-} = - (\omega^2 + 2k) \Phi_- $ & \quad & $\varphi_1(t) 
 \textbf{Allgemeine Lösunge des gekoppelten Systems:} \\
 Lineare Kombination der symmetrischen und asymmetrischen Lösung \\
 
+% Muss sin*sin resp. cos*cos sein, anh. Buch Physik II, Seite 95, sowie Additionstheorem (z.B. IntTra Seite 3), Vorl.-Folien sind falsch
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{lll}
-$\varphi_1(t) = \Phi \, \sin( \Omega\, t) \cdot \cos(\overline{\omega} \, t)$ & & $\Omega = \frac{\omega_k - \omega}{2}$ \\
-$\varphi_2(t) = \Phi \, \cos( \Omega\, t) \cdot \sin(\overline{\omega} \, t)$ & & $\overline{\omega} = \frac{\omega + \omega_k}{2}$ \\
+$\varphi_1(t) = \Phi \, \sin( \Omega\, t) \cdot \sin(\overline{\omega} \, t)$ & & $\Omega = \frac{\omega_k - \omega}{2}$ \\
+$\varphi_2(t) = \Phi \, \cos( \Omega\, t) \cdot \cos(\overline{\omega} \, t)$ & & $\overline{\omega} = \frac{\omega + \omega_k}{2}$ \\
 \\
 \end{tabular}
 \renewcommand{\arraystretch}{1}
