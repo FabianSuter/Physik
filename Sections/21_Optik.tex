@@ -394,7 +394,7 @@ Für $\varepsilon_1 = 90$° berechnet sich $\varepsilon_2 = \varepsilon_g$ aus:
 
 %$$ \frac{sin(\varepsilon_1)}{sin(\varepsilon_1)} = \frac{1}{sin(\varepsilon_g)} = \frac{n_2}{n1} $$
 
-$$ \varepsilon_g = \arcsin \Big( \frac{n_1}{n_2} \Big) $$
+$$ \boxed{\varepsilon_g = \arcsin \left( \frac{n_1}{n_2} \right)} $$
 
 
 Für den Grenzfall von $\varepsilon_1 > 90$° wird der gesamte Stahl reflektiert. \\
@@ -641,7 +641,7 @@ $$ \boxed{ D = \frac{1}{f} }$$
 \end{minipage}
 \hfill
 \begin{minipage}{0.46\linewidth}
-$$\boxed{D = (n-1)  \Big(  \frac{1}{R_1} - \frac{1}{R_2} \Big)  }$$
+$$\boxed{D = \left(\frac{n_2}{n_1}-1\right) \left(  \frac{1}{R_1} - \frac{1}{R_2} \right)  }$$
 
 \textcolor{blue}{Vorzeichen von $R_i$ beachten!} \\
 Beide haben \\
@@ -961,14 +961,14 @@ $$ \boxed{ B = \frac{f}{g} \, G }$$ \\
 \end{minipage}
 
 
-\textbf{Lichtstärke $H [\frac{W}{m^2}]$} 
+\textbf{Lichtstärke, Helligkeit $H [\frac{W}{m^2}]$} 
 
 \begin{minipage}{0.48\linewidth}
 Die Intensität des Lichts auf dem Film ist gegeben durch \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-$$ \boxed{ H = \Big(  \frac{d}{f} \Big)^2 = q^2 } $$ \\
+$$ \boxed{ H = \left(  \frac{d}{f} \right)^2 = q^2 } $$ \\
 \end{minipage}
 
 
@@ -1084,7 +1084,7 @@ Es wird zuerst ein vergrössertes Bild erzeugt, welchs selber wiederum mit einer
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/mikroskop} \\
 
-$$ \boxed{ V = \frac{\Delta \cdot s}{f_1 \cdot f_2} = \frac{\tan(\varepsilon)}{\tan(\varepsilon_0)} = \frac{\frac{B}{f_2}}{\frac{G}{s}} = \frac{B}{G} \frac{s}{f_2} = \frac{b_1}{g_1} \frac{s}{f_2} } $$
+$$ \boxed{ V = \underbrace{\frac{\Delta}{f_1}}_{V_1} \cdot \underbrace{\frac{s}{f_2}}_{V_2} = \frac{\tan(\varepsilon)}{\tan(\varepsilon_0)} = \frac{\frac{B}{f_2}}{\frac{G}{s}} = \frac{B}{G} \frac{s}{f_2} = \frac{b_1}{g_1} \frac{s}{f_2} } $$
 
 
 \begin{tabular}{c l c}
@@ -1092,6 +1092,8 @@ $$ \boxed{ V = \frac{\Delta \cdot s}{f_1 \cdot f_2} = \frac{\tan(\varepsilon)}{\
 	$s$ & Deutliche Sehweite $s =0.25 \, \m$ & $[s] = \m$ \\
 	$f_i$ & Brennweite & $[f_i] = \m$ \\
 	$V$ & Vergrösserung & $[V] = 1$ \\
+	$V_1$ & Vergrösserung des Objektivs & $[V_1] = 1$ \\
+	$V_2$ & Vergrösserung des Okulars & $[V_2] = 1$ \\
 	$\Delta$ & optische Tubuslänge (Abstand der Brennpunkte) & $[\Delta] = \m$ \\
 	$b_1$ & Bildweite & $[b_1] = \m$ \\
 	$g_1$ & Gegenstandsweite & $[g_1] = \m$ \\
