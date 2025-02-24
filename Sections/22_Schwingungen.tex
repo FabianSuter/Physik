@@ -535,7 +535,7 @@ $D$ & Dämpfungsgrad & $[D] = 1$
 
 
 
-\subsection{Fremderregte Schwingungen - Dämpfererregung}
+\subsection{Fremderregte Schwingungen - Dämpfererregung}\label{Dämpfererregung}
 
 \begin{minipage}{0.25\linewidth}
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/daempfererregung} \\
@@ -661,13 +661,13 @@ $A_R$ & Resonanzamplitude & $[A_R] = \m$
 \begin{minipage}{0.68\linewidth}
 $$ \boxed{ \text{DGL: } L \ddot{I} + R \dot{I} + \frac{1}{C} \, I = \omega \, U_0 \,\sin(\omega \, t + \frac{\pi}{2}) } $$
 
-$\Rightarrow$ Gleiche DGL wie bei \textcolor{blue}{Dämpfererregung} \\
+$\Rightarrow$ Gleiche DGL wie bei \textcolor{blue}{Dämpfererregung \ref{Dämpfererregung}} \\
 \end{minipage}
 
 
-$ \textcolor{blue}{\text{DGL: } m \ddot{y} + b \dot{y} + c \, y = b \, \omega \, u_0 \, \cos(\omega \, t) }, \textcolor{blue}{A(\omega) =  \frac{b \, \omega \, u_0}{m\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} } $ \\
+% $ \textcolor{blue}{\text{DGL: } m \ddot{y} + b \dot{y} + c \, y = b \, \omega \, u_0 \, \cos(\omega \, t) }, \textcolor{blue}{A(\omega) =  \frac{b \, \omega \, u_0}{m\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}} } $ \\
 
-\vspace{0.1cm}
+% \vspace{0.1cm}
 
 
 $ \boxed{ I(\omega) =  \frac{\omega}{L\sqrt{(\omega_0^2 -\omega^2)^2 + (2D \omega_0 \omega)^2}}U_0, \, \omega_0 = \frac{1}{\sqrt{LC}} , \, D = \frac{R}{2}\sqrt{\frac{C}{L}}} $ 
@@ -715,9 +715,13 @@ $D$ & Dämpfungsgrad & $[D] = 1$
 \subsection{Fremderregte Schwingung - Güte $Q$}
 \subsubsection{Definition}
 
-Die relative Abnahme der Schwingungsenergie $E(t)$ pro Schwingdauer wird als \textbf{Güte} oder \textbf{Gütefaktor} bezeichnet 
-
-$$ \boxed{ Q = 2 \pi \frac{E(t)}{E(t) - E(t + T)} }$$ 
+\begin{minipage}{0.55\linewidth}
+    Die relative Abnahme der Schwingungsenergie $E(t)$ pro Schwingdauer wird als \textbf{Güte} oder \textbf{Gütefaktor} bezeichnet 
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+    $$ \boxed{ Q = 2 \pi \frac{E(t)}{E(t) - E(t + T)} }$$ 
+\end{minipage}
 
 
 
@@ -748,38 +752,45 @@ Breite der Resonanzkurve bei $U_0 = \frac{U_{0r}}{\sqrt{2}}$ \\
 
 
 \subsection{Gekoppelte Pendel}
-Zwei Pendel sind durch eine Feder miteinander verbunden. \\
-\textbf{Die Bewegung eines Pendels hat Auswirkungen auf die \\
-Bewegung des anderen Pendels.} \\
-Gesucht ist eine Beschreibung der Bewegung des Pendels. \\
 
-\begin{minipage}{0.3\linewidth}
-    \includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/gekoppelte_pendel} 
+\begin{minipage}{0.5\linewidth}
+    Zwei Pendel sind durch eine Feder miteinander verbunden. \\
+    \textbf{Die Bewegung eines Pendels hat Auswirkungen auf die Bewegung des anderen Pendels.} \\
+    Gesucht ist eine Beschreibung der Bewegung des Pendels. \\
 \end{minipage}
 \hfill
-\begin{minipage}{0.66\linewidth}
+\begin{minipage}{0.45\linewidth}
     $ J_1 \ddot{\varphi_1} = -m_1 \, g \, a_1 \, \varphi_1 + c \cdot h2 \, (\varphi_2 - \varphi_1)$ \\
     $ J_2 \ddot{\varphi_2} = -m_2 \, g \,  a_2 \, \varphi_2 - c \cdot h^2 \, (\varphi_2 - \varphi_1)$ \\
 
-    \vspace{0.2cm}
+    \textbf{Spezialfall}% $J_1 = J_2 = J$ und $m_1 = m_2 = m$ und $a_1 = a_2 = a$} \\
+    \begin{itemize}
+        \item $J_1 = J_2 = J$, $m_1 = m_2 = m$
+        \item $a_1 = a_2 = a$
+    \end{itemize}
+\end{minipage}
 
-    \textbf{Spezialfall $J_1 = J_2 = J$ und $m_1 = m_2 = m$ und $a_1 = a_2 = a$} \\
-
+\begin{minipage}{0.25\linewidth}
+    \includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/gekoppelte_pendel} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.74\linewidth}
     $ \ddot{\varphi_1} = - \omega^2 \varphi_1 + k \, (\varphi_2 - \varphi_1)$ \\
     $ \ddot{\varphi_2} = - \omega^2 \varphi_2 - k \, (\varphi_2 - \varphi_1)$ \\
 
-    \vspace{0.2cm}
     mit $ \omega^2 = \frac{mga}{J}$ \quad $k = \frac{c \cdot h^2}{J}$ \quad $\omega_k = \sqrt{\omega^2 + 2 \, k}$ \\
     
     mit $\Phi_+ = \varphi_1 + \varphi_2$ \qquad $\Phi_- = \varphi_2 + \varphi_1$ \\
+
+    \begin{tabular}{llll}
+        Symm: & $\ddot{\Phi_+} = - \omega^2 \Phi_+ $ &  &  $\varphi_1(t) = \varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega t} $\\
+        Antisymm: & $\ddot{\Phi_-} = - (\omega^2 + 2k) \Phi_- $ &  & $\varphi_1(t) = -\varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega_k t} $ \\
+        \\
+    \end{tabular}
 \end{minipage}
 
 
-\begin{tabular}{llll}
-Symm: & $\ddot{\Phi_+} = - \omega^2 \Phi_+ $ & \quad &  $\varphi_1(t) = \varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega t} $\\
-Antisymm: & $\ddot{\Phi_-} = - (\omega^2 + 2k) \Phi_- $ & \quad & $\varphi_1(t) = -\varphi_2(t) = \frac{\Phi_0}{2} \cos{ \omega_k t} $ \\
-\\
-\end{tabular}
+
 
 
 
