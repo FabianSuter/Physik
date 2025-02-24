@@ -743,18 +743,17 @@ $$ \xi_1(0) = \xi_2(0) \qquad \dot{\xi}_1(0) = \dot{\xi}_2(0) $$
 
 
 
-\subsubsection{Intensität von Reflexion und Transmission}
+\subsubsection{Intensität von Reflexion und Transmission}\label{Reflexionskoeffizient}
 
 \begin{minipage}{0.48\linewidth}
 	\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/reflexionskoeffizient_transmissionskoeffizient} \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-	$$ \boxed{ R = \left(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \right)^2  } $$
-	$$ \boxed{ \sqrt{R} = \frac{Z_1 - Z_2}{Z_1 + Z_2} = \frac{u_R}{u_H} = \frac{A_R}{A_H} = \frac{p_R}{p_H}} $$
+	$$ \boxed{ R = \left(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \right)^2  }  \quad \boxed{ T = \frac{ 4 \cdot Z_1 \cdot Z_2}{(Z_1 + Z_2)^2}   }$$
+	$$ \boxed{ \sqrt{R} = \frac{Z_1 - Z_2}{Z_1 + Z_2} = \frac{u_R}{u_H} = \frac{A_R}{A_H} = \frac{p_R}{p_H} = ...} $$
 
-	$$ \boxed{ T = \frac{ 4 \cdot Z_1 \cdot
-	Z_2}{(Z_1 + Z_2)^2}   } $$
+	$$ \boxed{ \frac{2 \cdot Z_2}{(Z_1 + Z_2)}  = \frac{u_T}{u_H} = \frac{A_T}{A_H} = \frac{p_T}{p_H} = ... } $$
 \end{minipage}
 
 \vspace{0.2cm}
@@ -766,10 +765,13 @@ $R$ & Reflexionskoeffizient  & $[R] = 1$ \\
 $r$ & Amplitudenverhältnis  & $[r] = 1$ \\
 $u_H$ & Geschw. hinlaufende Welle & $[u_H] = \frac{m}{s}$ \\
 $u_R$ & Geschw. refl. Welle & $[u_R] = \frac{m}{s}$ \\
-$p_H$ & Druck hinlaufende Welle & $[u_H] = Pa$ \\
-$p_R$ & Druck refl. Welle & $[u_R] = Pa$ \\
-$A_H$ & Ampl. hinlaufende Welle & $[u_H] = 1$ \\
-$A_R$ & Ampl. refl. Welle & $[u_R] = 1$ \\
+$u_T$ & Geschw. trans. Welle & $[u_T] = \frac{m}{s}$ \\
+$p_H$ & Druck hinlaufende Welle & $[p_H] = Pa$ \\
+$p_R$ & Druck refl. Welle & $[p_R] = Pa$ \\
+$p_T$ & Druck trans. Welle & $[p_T] = Pa$ \\
+$A_H$ & Ampl. hinlaufende Welle & $[A_H] = 1$ \\
+$A_R$ & Ampl. refl. Welle & $[A_R] = 1$ \\
+$A_T$ & Ampl. trans. Welle & $[A_R] = 1$ \\
 $T$ & Transmissionskoeffizient & $[T] = 1 $ \\
 $Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \frac{\N \, \s}{\m^3}$ \\
 \end{tabular}
@@ -859,10 +861,10 @@ $Z_n$ & Wellenwiderstand im Medium $n$ & $[Z] = \Ohm = \frac{\Pa}{\m / \s} = \fr
 
 \subsubsection{Elektromagnetische Wellen in homogenem Milieu}
 
-$$ \boxed{ Z = \frac{E}{H} = \sqrt{ \frac{\mu_r \mu_0}{\varepsilon_r \varepsilon_0}} = \sqrt{\frac{\mu_r}{\varepsilon_r}} Z_0 = Z_0 \frac{c}{n}} $$
+$$ \boxed{ Z = \frac{E}{H} = \sqrt{ \frac{\mu_r \mu_0}{\varepsilon_r \varepsilon_0}} = \sqrt{\frac{\mu_r}{\varepsilon_r}} Z_0 = Z_0 \frac{c}{n}} \quad \boxed{ R = \left(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \right)^2 =  \left(  \frac{n_1 - n_2}{n_1 + n_2}  \right)^2 }$$
 
 
-$$ \boxed{ R = \Big(  \frac{Z_1 - Z_2}{Z_1 + Z_2}  \Big)^2 =  \Big(  \frac{n_1 - n_2}{n_1 + n_2}  \Big)^2 }  $$
+$$ \boxed{ E_{r0} = \frac{Z_2 - Z_1}{Z_1 + Z_2} E_{h0} } \quad \boxed{E_{t0} = \frac{2 \cdot Z_2}{Z_1 + Z_2} E_{h0}} $$
 
 \renewcommand{\arraystretch}{1.1}
 \begin{tabular}{clc}
@@ -992,27 +994,29 @@ $A$ & Querschnitt der Saite & $[A] = \m^2$
 \subsubsection{Pfeifen}
 
 \begin{minipage}{0.48\linewidth}
-\textbf{Offene Pfeife}\\
-Länge $l = \frac{\lambda}{2}$ \\
+	\textbf{Offene Pfeife}\\
+	Länge $l = \frac{\lambda}{2}$ \\
 
-\includegraphics[width=0.85\linewidth]{Bilder/Wellen-Optik/offene_pfeiffe}\\
+	\includegraphics[width=0.8\linewidth]{Bilder/Wellen-Optik/offene_pfeiffe}\\
 
-Auslenkung an Enden: \\
-Wellenbauch \\
-\\
+	Auslenkung an Enden: \\
+	Wellenbauch \\
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\linewidth}
-\textbf{Gedackte Pfeife} \\
-Länge $l = \frac{\lambda}{4}$ \\
+	\textbf{Gedackte Pfeife} \\
+	Länge $l = \frac{\lambda}{4}$ \\
 
-\includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/gedackte_pfeiffe} \\
+	\includegraphics[width=0.85\linewidth]{Bilder/Wellen-Optik/gedackte_pfeiffe} \\
 
-Auslenkung offenes Ende: \\
-Wellenbauch \\
-Auslenkung gedacktes Ende:\\
-Knoten (max. Auslenkung)
+	Auslenkung offenes Ende: Wellenbauch \\
+	Auslenkung gedacktes Ende: Knoten \\
+	(max. Auslenkung) \\
 \end{minipage}
+
+\begin{center}
+	$ \boxed{f_n = \underbrace{\frac{n}{2l}\sqrt{\frac{\varkappa R T}{M}}}_{\text{offen}}, \qquad f_n = \underbrace{\frac{2n+1}{4l}\sqrt{\frac{\varkappa R T}{M}}}_{\text{gedackt}}} $
+\end{center}
 
 
 \subsection{Eigenschwingungen - 2D}
@@ -1035,24 +1039,34 @@ Knoten (max. Auslenkung)
 	$$ \boxed{ u^2 = \frac{\omega^2}{k^2}} $$
 \end{minipage}
 
-\textbf{Randbedingungen:} \\
-\vspace{0.1cm}
-
+\textbf{Randbedingungen:} %\\
 \begin{tabular}{l c c }
-Auslenkung = 0 &  $ \boxed{ k_x = \frac{n \, \pi}{a} }$ & $ \boxed{ k_y = \frac{m \, \pi}{b} }$
+	Auslenkung = 0 &  $ \boxed{ k_x = \frac{n \, \pi}{a} }$ & $ \boxed{ k_y = \frac{m \, \pi}{b} }$
 \end{tabular} 
 
+\begin{minipage}{0.45\linewidth}
+	\begin{tabular}{clc}
+		$u$ & Wellengeschwindigkeit & $[u] = \frac{\m}{\s}$ \\
+		$m$ & Ganze Zahl & $[m] = 1$ \\
+		$n$ & Ganze Zahl & $[n] = 1$ \\
+		$\omega$ & Kreisfrequenz & $[\omega] = \frac{\rad}{\s}$ \\
+		$k_{...}$ & Wellenzahl & $[k_{...}] = \frac{1}{\m} $ \\
+		$a,b$ & Seitenlänge Membran & $[a,b] = \m$ \\
+		$A$ & Querschnitt der Membrane & $[A] = \m^2$
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+	$$ \boxed{f_{mn} = \frac{1}{2}\sqrt{\frac{F}{\rho A}}\sqrt{\frac{m^2}{a^2} + \frac{n^2}{b^2}}} $$
+\end{minipage}
 
-
-% \vfill\null
-% \columnbreak
 
 
 \section{Beugung}
 
 \subsubsection{Terminologie}
 
-Die \textbf{Richtungsänderungen} der Wellenausbreitung in einem homogenen Medium durch \textbf{Hindernisse} wird als \textbf{Beugung (Diffraction)} bezeichnet. \\
+Die \textbf{Richtungsänderungen} der Wellenausbreitung in einem homogenen Medium durch \textbf{Hindernisse} wird als \textbf{Beugung (Diffraktion)} bezeichnet. \\
 \begin{itemize}
 	\item Das Hindernis kann eine Kante, ein Spalt oder ein kleines \\
 	Objekt sein sein 
@@ -1075,7 +1089,7 @@ Spalt, Kante, Loch (Pinhole), Objektiv-Öffnung
 \includegraphics[width=0.7\linewidth]{Bilder/Wellen-Optik/beugung_spalt} 
 
 
-\subsubsection{Intensität nach dem Spalt}
+\subsubsection{Intensität nach dem Spalt}\label{Spalt-Intensitaet}
 
 
 \begin{minipage}{0.58\linewidth}
@@ -1157,7 +1171,7 @@ $$ \boxed{ I_G = \frac{A^2}{r^2} \textcolor{red}{A_s^2} \, \textcolor{green}{B^2
 \vspace{0.2cm} 
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{ll}
-$A_s^2(\varphi)$ & hat Nullstellen bei $n \, \frac{\lambda}{s}$ (hängt von $s$ ab) \\
+$A_s^2(\varphi)$ & hat Nullstellen bei $n \, \frac{\lambda}{s}$ (hängt von $s$ ab), gleiches $A_s$ wie in \ref{Spalt-Intensitaet} \\
 $B^2(\varphi)$ & hat Hauptmaxima bei $n \, \frac{\lambda}{d}$ und $Z - 2$ Nebenmaxima\\
 & dazwischen (hängt von $Z$ und $d$ ab)\\
 \end{tabular}
@@ -1172,7 +1186,7 @@ $I_G$ & Intensität nach Gitter & $[I_G] = \frac{W}{\m^2}$ \\
 $k$ & Wellenzahl & $[k] = \frac{1}{\m}$ \\
 $s$ & Spalt & $[s] = \m$ \\
 $d$ & Gitterkonstante & $[d] = \m$ \\
-$Z$ & Anzahl Spalte & $[Z] = 1$
+$Z$ & Anzahl der Spalten & $[Z] = 1$
 \end{tabular}
 \renewcommand{\arraystretch}{1}
 
@@ -1283,64 +1297,64 @@ $b_0$ & Basisgrösse & $[b_0] = [x]$ \\
 
 \subsection{Schallintensität}
 
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{ L_I = 10 \cdot \log \Big( \frac{I}{I_0} \Big) } $$ 
+\begin{minipage}{0.28\linewidth}
+	$$ \boxed{ L_I = 10 \cdot \log \left( \frac{I}{I_0} \right) } $$ 
 \end{minipage}
 \hfill
-\begin{minipage}{0.48\linewidth}
-$$ \boxed{ L_p = 20 \cdot \log \Big( \frac{p_{eff}}{p_{eff0}} \Big) } $$ 
+\begin{minipage}{0.40\linewidth}
+	$$ \boxed{I = \frac{1}{2}\rho v_0^2 u = \frac{\Delta p_0^2}{2 \rho u} }$$ 
+\end{minipage}
+\hfill
+\begin{minipage}{0.28\linewidth}
+	$$ \boxed{ p_{eff} = \frac{\Delta p_0}{\sqrt{2}} } $$ 
 \end{minipage}
 
-$$ \boxed{ p_{eff} = \frac{\Delta p_0}{\sqrt{2}} } $$ \\
+\begin{minipage}{0.28\linewidth}
+	$$ \boxed{ L_p = 20 \cdot \log \left( \frac{p_{eff}}{p_{eff0}} \right) } $$ 
+\end{minipage}
+\hfill
+\begin{minipage}{0.28\linewidth}
+	$$ \boxed{ L_P = 10 \cdot log \left(\frac{P}{P_0}\right)} $$ 
+\end{minipage}
 
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{clc}
-$L_I$ & Schallintensitätspegel & $[L_I] = \dB$ \\
-$L_p$ & Schalldruckpegel & $[L_p] = \dB$ \\
-$I$ & Intensität & $[I] = \frac{\W}{\m^2}$\\
-$p_{eff}$ & Schalldruck (Effektivwert) & $[p_{eff}] = \Pa$ \\
-$\Delta p_0$ & Druckamplitude & $[\Delta p_0] = \Pa$ 
-\end{tabular}
-
-
-\begin{tabular}{cl}
-$I_0$ & Bezugsintensität $I_0 = 10^{-12} \, \frac{\W}{\m^2}$\\
-$p_{eff0}$ & Bezugsschalldruck $p_{eff0} = 2 \cdot 10^{-5} \Pa$ \\
+	$L_I$ & Schallintensitätspegel & $[L_I] = \dB$ \\
+	$I$ & Intensität & $[I] = \frac{\W}{\m^2}$\\
+	$I_0$ & Bezugsintensität  & $I_0 = 10^{-12} \frac{\W}{\m^2}$ \\
+	$L_p$ & Schalldruckpegel & $[L_p] = \dB$ \\
+	$p_{eff}$ & Schalldruck (Effektivwert) & $[p_{eff}] = \Pa$ \\
+	$p_{eff0}$ & Bezugsschalldruck & $p_{eff0} = 2 \cdot 10^{-5} \Pa$ \\
+	$L_P$ & Schallleistungspegel & $[L_P] = \dB$ \\
+	$P$ & Schallleistung & $[P] = \W$ \\
+	$P_0$ & Bezugsschallleistung & $P_0 = 10^{-12} \W$ \\
+	$\Delta p_0$ & Druckamplitude & $[\Delta p_0] = \Pa$ \\
 \end{tabular}
 \renewcommand{\arraystretch}{1}
+
+\subsection{Intensität bei Kugelwellen}
+\begin{tabular}{lll}
+					 & \textbf{ohne Dämpfung} & \textbf{mit Dämpfung} \\
+	Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} }$ & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} \, \e^{- \alpha r}}$\\
+
+	Verhältnis 		 & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} }$ & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} \, \e^{- \alpha (r_2 - r_1)} }$ \\
+
+	Pegel 			 & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right)}$ & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right) - K (r_2 - r_1)  }$\\
+\end{tabular}
+
+\begin{tabular}{clc}
+	$I(r)$ & Intensität & $[I(r)] = \frac{\W}{\m^2}$ \\
+	$P$ & Leistung & $[P] = \W$ \\
+	$r_i$ & Abstand (Radius) zum Wellenursprung & $[r_i] = \m^2$\\
+	$L_i$ & Pegel & $[L_i] = \dB$ \\
+	$\alpha$ & Absorptionsgrad ($\alpha = 1-R$, siehe \ref{Reflexionskoeffizient} ) & $[\alpha] = 1$ \\
+	$K$ & Dämpfung & $[K] = \frac{\dB}{\m}$
+\end{tabular}
 
 
 \subsection{Verschiedene Schallquellen}
 
 \includegraphics[width=0.9\linewidth]{Bilder/Wellen-Optik/schallquellen} \\
-
-% \vfill\null
-% \columnbreak
-
-
-
-\subsection{Intensität bei Kugelwellen (ohne Dämpfung)}
-
-% \renewcommand{\arraystretch}{2.7}
-\begin{tabular}{ll}
-Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} }$ \\
-
-Verhältnis & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} }$ \\
-
-Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right)}$ \\
-\end{tabular}
-% \renewcommand{\arraystretch}{1}
-
-
-% \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{clc}
-$I(r)$ & Intensität & $[I(r)] = \frac{\W}{\m^2}$ \\
-$P$ & Leistung & $[P] = \W$ \\
-$r_i$ & Abstand (Radius) zum Wellenursprung & $[r_i] = \m^2$\\
-$L_i$ & Pegel & $[L_i] = \dB$ 
-\end{tabular}
-
-
 
 \subsection{PHON-Skala}
 \includegraphics[width=0.95\linewidth]{Bilder/Wellen-Optik/phon_skala}
@@ -1380,35 +1394,6 @@ Schall. Auch die Ausbreitung von Schall innerhalb eines Gebäudes wird
 durch die Schalldämmung von Zwischenwänden und Türen
 abgeschwächt. Im Freien wird durch Schallschutzwände eine
 Schalldämmung für die dahinterliegenden Gebäude erreicht.
-
-
-
-
-\subsection{Intensität bei Kugelwellen (mit Dämpfung)}
-
-\renewcommand{\arraystretch}{2.7}
-\begin{tabular}{ll}
-Energieerhaltung & $ \boxed{ I(r) = \frac{P}{4 \, \pi \, r^2} \, \e^{- \alpha r}}$ \\
-
-Verhältnis & $\boxed{ \frac{I_2}{I_1} = \frac{r_1^2}{r_2^2} \, \e^{- \alpha (r_2 - r_1)} }$ \\
-
-Pegel & $\boxed{ L_2 = L_1 - 20 \cdot \log \left( \frac{r_2}{r_1} \right) - K (r_2 - r_1)  }$ \\
-\end{tabular}
-\renewcommand{\arraystretch}{1}
-
-\vspace{0.2cm}
-
-
-\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{clc}
-$I(r)$ & Intensität & $[I(r)] = \frac{\W}{\m^2}$ \\
-$P$ & Leistung & $[P] = \W$ \\
-$r_i$ & Abstand (Radius) zum Wellenursprung & $[r_i] = \m^2$\\
-$L_i$ & Pegel & $[L_i] = \dB$ \\
-$\alpha$ & Dämpfung & $[\alpha] = 1$ \\
-$K$ & Dämpfung & $[K] = \frac{\dB}{\m}$
-\end{tabular}
-\renewcommand{\arraystretch}{1}
 
 
 
@@ -1466,7 +1451,7 @@ $$ \boxed{ T_N = 0.16 \, \frac{\s}{\m} \frac{V}{\sum\limits_i \alpha_i A_i } } $
 \begin{tabular}{clc}
 $T_N$ & Nachhallzeit & $[T_N] = \s$ \\
 $V$ & Raumvolumen & $[V] = \m^3$ \\
-$\alpha_i$ & Absoptionsgrad & $[\alpha_i] = 1$ \\
+$\alpha_i$ & Absorptionsgrad & $[\alpha_i] = 1$ \\
 $A_i$ & Teilfläche der Raumbegrenzung & $[A_i] = \m^2$ \\ 
 & mit Absorption $\alpha_i$ \\
 \end{tabular}
