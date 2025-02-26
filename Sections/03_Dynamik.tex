@@ -764,7 +764,7 @@
 
 	\subsection{Rotation vs. Translation}
 		\begin{center}
-			\begin{adjustbox}{angle=90}
+			\begin{adjustbox}{angle=90} % \usepackage{adjustbox} needed
 				\begin{tabular}{llll}
 					\textbf{Drehbewegung}       & & \textbf{Lineare Bewegung} \\
 					Drehwinkel					& $ \Delta \theta $ & Verschiebung																& $ \Delta x $ \\
@@ -774,13 +774,9 @@
 					Winkelbeschleunigung		& $ \alpha = \frac{\diff \omega}{\diff t} = \frac{\diff^2 \theta}{\diff t^2} $ & Beschleunigung	& $ a = \frac{\diff v}{\diff t} = \frac{\diff^2 x}{\diff t^2} $ \\
 					&&&\\
 					Gleichungen für den Fall	& $ \omega = \omega_0 + \alpha t $ & Gleichungen für den Fall									& $ v = v_0 + a t $ \\
-					% &&&\\
 					konst. Winkelbeschl.		& $ \Delta \theta = \langle \omega \rangle \Delta t $ & konst. Beschleunigung					& $ \Delta x = \langle v \rangle \Delta t $ \\
-					% &&&\\
 												& $ \langle \omega \rangle = \frac{1}{2} (\omega_0 + \omega) $ & 								& $ \langle v \rangle = \frac{1}{2} (v_0 + v) $ \\
-												% &&&\\
 												& $ \theta = \theta_0 + \omega_0 t + \frac{1}{2} \alpha t^2 $ & 								& $ x = x_0 + v_0 t + \frac{1}{2}a t^2 $ \\
-												% &&&\\
 												& $ \omega^2 = \omega_0^2 + 2 \alpha \Delta \theta $ & 											& $ v^2 = v_0^2 + 2a \Delta x $ \\
 												&&&\\
 					Drehmoment					& $ M $ & Kraft																					& $ F $ \\
